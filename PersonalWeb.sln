@@ -4,6 +4,8 @@ VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWeb", "BlazorWeb\BlazorWeb.csproj", "{EF18DBF2-BEF9-4A22-B1DB-30E6B835AD8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiServer", "ApiServer\ApiServer.csproj", "{930771CC-4430-4941-B119-C17E10F9D20A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,6 +16,10 @@ Global
 		{EF18DBF2-BEF9-4A22-B1DB-30E6B835AD8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF18DBF2-BEF9-4A22-B1DB-30E6B835AD8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF18DBF2-BEF9-4A22-B1DB-30E6B835AD8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{930771CC-4430-4941-B119-C17E10F9D20A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{930771CC-4430-4941-B119-C17E10F9D20A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{930771CC-4430-4941-B119-C17E10F9D20A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{930771CC-4430-4941-B119-C17E10F9D20A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
