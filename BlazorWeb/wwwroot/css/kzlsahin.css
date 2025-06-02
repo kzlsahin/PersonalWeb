@@ -1,0 +1,127 @@
+﻿.head-scene {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2em;
+    border-bottom: 2px solid darkred;
+}
+
+#kzlSahin {
+    width: 40%;
+    max-width: 30em;
+    margin-top: 3%;
+}
+
+#profile {
+    width: 30%;
+    max-width: 30em;
+    margin-top: 3%;
+}
+
+    #kzlSahin img, #profile img {
+        box-shadow: 2px 5px 12px grey;
+        border-radius: 1em;
+        width: 100%;
+    }
+
+.personal-name {
+    font-size: 26px;
+    font-family: 'Moon Dance', cursive;
+    text-align: center;
+    line-height: 2em;
+}
+
+.personal-details {
+    font-size: 22px;
+    font-family: 'Moon Dance', cursive;
+    text-align: center;
+    line-height: 2em;
+}
+
+
+.head-title {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    color: darkred;
+    align-items: center;
+}
+
+
+    .head-title h1 {
+        text-align: center;
+    }
+
+    .head-title h4 {
+        text-align: center;
+    }
+
+section, hr {
+    float: left;
+    width: 100%;
+}
+
+.resume-download {
+    padding: 0.2em;
+    width: 10em;
+    border: 1px solid brown;
+    box-shadow: 2px 2px 4px grey;
+    font-family: 'Moon Dance', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    color: darkred;
+}
+
+    .resume-download:hover {
+        box-shadow: 5px 5px 8px grey;
+    }
+
+@media only screen and (max-width: 760px) {
+    body {
+        width: 98%;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-size: 2.7vw;
+        color: darkred;
+    }
+
+    .headTitle {
+        float: right;
+        width: 100%;
+        text-align: center;
+        color: darkred;
+    }
+
+    #kzlSahin {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    #profile {
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+
+    .personal-name {
+        font-size: 3.5vw;
+        font-family: 'Moon Dance', cursive;
+    }
+
+    .personal-details {
+        font-size: 3vw;
+        font-family: 'Moon Dance', cursive;
+    }
+
+    .resume-download {
+        font-size: 1.5vw;
+    }
+}

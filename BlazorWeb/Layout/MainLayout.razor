@@ -1,11 +1,35 @@
 ﻿@inherits LayoutComponentBase
+
 <div class="page">
     <div class="sidebar">
         <NavMenu />
     </div>
 
     <main>
+
         <div class="top-row px-4">
+            <div class="nav-bar-item">
+                <span id="en" class="lang-dependant">lang:</span>
+                <span id="tr" class="lang-dependant">dil:</span>
+                <select id="lang-selector" name="lang" onchange="setlanguage()">
+                    <option selected value="en">
+                        En
+                    </option>
+                    <option value="tr">
+                        Tr
+                    </option>
+                </select>
+                <div class="icon-lang" onclick="focusDropdown()">
+                    <img id="en" class="lang-dependant" src="assets/united-kingdom.png" alt="English-flag">
+                    <img id="tr" class="lang-dependant" src="assets/turkey.png" alt="Turkish-flag">
+                </div>
+                <script>
+                    function focusDropdown() {
+                    let select = document.getElementById("lang-selector");
+                    select.focus();
+                    }
+                </script>
+            </div>
             <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
         </div>
 
@@ -14,3 +38,5 @@
         </article>
     </main>
 </div>
+
+
