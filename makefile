@@ -6,3 +6,6 @@ down:
 	docker compose -f docker-compose.yml down
 build-up:
 	docker compose -f docker-compose.yml up --build -d
+publish-blazorweb:
+	dotnet publish BlazorWeb/BlazorWeb.csproj -c Release -o web
+
