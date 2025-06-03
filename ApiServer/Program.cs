@@ -1,4 +1,24 @@
+using ApiServer;
+using Serilog;
+
+Log.Logger = new LoggerConfiguration()
+            .MinimumLevel.Information()
+            .WriteTo.Console() // Logs to the console
+            .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day) // Logs to a file, one per day
+            .CreateLogger();
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Host.UseSerilog();
+
+builder.Configuration
+    .AddJsonFile(".sec/cloudflare.json", optional: false, reloadOnChange: true);
+
+builder.Services.Configure<CloudflareSettings>(
+    builder.Configuration.GetSection("Cloudflare")
+);
+
+builder.Services.AddHttpClient();
+builder.Services.AddHostedService<DDNSUpdater>();
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
