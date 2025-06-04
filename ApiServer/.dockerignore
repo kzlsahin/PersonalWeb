@@ -1,0 +1,27 @@
+# Ignore secrets (even though they're volume-mounted)
+ApiServer/.sec/
+
+# Ignore build output
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userprefs
+
+# Ignore temp files and OS metadata
+*.log
+*.DS_Store
+*.vscode/
+*.idea/
+
+# Ignore version control
+.git/
+.gitignore
+.gitattributes
+
+# Ignore other projects (if building from root)
+BlazorWeb/
