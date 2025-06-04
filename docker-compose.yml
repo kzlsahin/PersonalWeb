@@ -22,4 +22,7 @@ services:
       - ./ApiServer/.sec:/app/.sec:ro
     environment:
       - DOTNET_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://0.0.0.0:5000
+    expose:
+      - "5000"
     restart: always

@@ -14,6 +14,4 @@ WORKDIR /app
 
 COPY --from=build /app/publish .
 
-ENV DOTNET_ENVIRONMENT=Production
-EXPOSE 5000
 ENTRYPOINT ["dotnet", "ApiServer.dll"]
