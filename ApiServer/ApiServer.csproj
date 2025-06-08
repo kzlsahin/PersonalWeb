@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Content Include=".sec\cloudflare.json" />
+    <Content Include=".sec\SampleCloudflareApiCalls.txt" />
   </ItemGroup>
 
   <ItemGroup>
