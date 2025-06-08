@@ -9,3 +9,5 @@ build-up:
 publish-blazorweb:
 	dotnet publish BlazorWeb/BlazorWeb.csproj -c Release -o web
 
+update-apiserver:
+	docker compose -f docker-compose.yml up --build -d apiserver
