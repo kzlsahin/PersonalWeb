@@ -305,9 +305,9 @@ function updateDataBuffer() {
 
 
 
-    let resp = fetchData('readDB.php', dat);
+    //let resp = fetchData('readDB.php', dat);
 
-        console.log("buffer updated");
+    //    console.log("buffer updated");
 }
 
 function copyDataExceptFunctions(dat) {
