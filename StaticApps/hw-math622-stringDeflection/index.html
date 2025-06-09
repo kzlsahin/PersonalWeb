@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>Fourier Graphs</title>
+    <meta name="author" content="Mustafa ŞENTÜRK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1905050">
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <script src="/Fourier/js/chart.js"></script>
+    <script src="js/dataHandler.v.1.9.js"></script>
+
+
+</head>
+
+<body>
+    <p>f(x): initial deflection of the string, L = 1, c = 1</p>
+    <text id="inp" contenteditable="true"
+        style="display:inline-block;width:50%;min-width:450px;min-height:50px;background-color: beige;">
+        (x)=>{
+            let k = 0.001;
+        let d = k*(Math.sin(Math.PI*x) - Math.sin(2*Math.PI * x) / 2); return d; } </text>
+            <div id="controls" style="display:inline-block;width:40%">
+                <button onclick="updateGraph()"
+                    style="display:block;background-color: chartreuse;padding: 1em; cursor: pointer;">Update graph</button>
+                <label for="xSpace"">X space = <span id="x-space" contenteditable="true"
+                        onchange="xSpaceChange()">0.001</span></label>
+                <input id="xSpace" name="xSpace" type="range" min="0.001" max="0.1" step="0.0001" value="0.001"
+                    style="display:block;width:40%;" onchange="updateGraph()">
+            </div>
+    <p>T = 0</p>
+    <canvas id="fourierGraph" width="700" height="200"></canvas>
+    <p>T = L/5c</p>
+    <canvas id="fourierGraph_0" width="700" height="200"></canvas>
+    <p>T = 2L/5c</p>
+    <canvas id="fourierGraph_1" width="700" height="200"></canvas>
+    <p>T = L/2c</p>
+    <canvas id="fourierGraph_2" width="700" height="200"></canvas>
+    <p>T = 3L/5c</p>
+    <canvas id="fourierGraph_3" width="700" height="200"></canvas>
+    <p>T = 4L/5c</p>
+    <canvas id="fourierGraph_4" width="700" height="200"></canvas>
+    <p>T = L/c</p>
+    <canvas id="fourierGraph_5" width="700" height="200"></canvas>
+    
+
+            <script>
+                let xSpace = document.getElementById("xSpace").value;
+                document.getElementById("x-space").innerText = xSpace;
+                let funcInp = eval(document.getElementById("inp").innerText);
+                let F = [];
+
+                const draw = () => {
+                    let L = 1;
+                    let c = 1;
+                    let t = 0;
+
+                    drawGraph(funcInp, t, "fourierGraph",  xSpace = xSpace);
+
+                    t = (L/c) * (1 / 5);
+                    F[0] = createWaveFunc(funcInp, t);
+                    drawGraph(F[0], t, "fourierGraph_0",  xSpace = xSpace);
+
+                    t = (L/c) * (2 / 5);
+                    F[1] = createWaveFunc(funcInp, t);
+                    drawGraph(F[1], t, "fourierGraph_1",  xSpace = xSpace);
+                    
+                    t = (L/c) * (1 / 2);
+                    F[2] = createWaveFunc(funcInp, t);
+                    drawGraph(F[2], t, "fourierGraph_2",  xSpace = xSpace);
+
+                    t = (L/c) * (3 / 5);
+                    F[3] = createWaveFunc(funcInp, t);
+                    drawGraph(F[3], t, "fourierGraph_3",  xSpace = xSpace);
+
+                    t = (L/c) * (4 / 5);
+                    F[4] = createWaveFunc(funcInp, t);
+                    drawGraph(F[4], t, "fourierGraph_4",  xSpace = xSpace);
+
+                    t = (L/c);
+                    F[5] = createWaveFunc(funcInp, t);
+                    drawGraph(F[5], t, "fourierGraph_5",  xSpace = xSpace);
+                };
+
+
+                draw();
+
+
+                const updateGraph = () => {
+                    let xSpace = document.getElementById("xSpace").value;
+                    document.getElementById("x-space").innerText = xSpace;
+                    funcInp = eval(document.getElementById("inp").innerText);
+                    draw();
+                };
+
+                
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>Fourier Graphs</title>
+    <meta name="author" content="Mustafa ŞENTÜRK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1905050">
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <script src="js/chart.js"></script>
+    <script src="js/dataHandler.v.1.9.js"></script>
+    <style>
+        body {
+            padding: 4ch;
+        }
+        #fourierGraph {
+            border : solid darkblue 1px;
+            box-shadow: 2px darkblue;
+        }
+        .input-block {
+            display: block;
+        }
+        #func-inp {
+            border : 1px solid orange;
+            display:inline-block;
+            width:50%;
+            min-width:450px;
+            min-height:250px;
+            background-color: whitesmoke;
+            padding: 1ch;
+        }
+
+        button {
+            background-color: chartreuse;padding: 1em; cursor: pointer;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <h1>Fourier Series</h1>
+    <p>by kzlsahin</p>
+    <p>You can enter your own function that resembles the fourier series.</p>
+   <canvas id="fourierGraph" width="700" height="500"></canvas>
+   <p></p>
+   <div class="input-block">
+    <p>JavaScript function:</p>
+    <text id="func-inp" contenteditable="true" >
+        (x)=>{  
+            let res = 0; 
+            for(n = 1; n < 15; n++){ 
+                res += Math.sin((2*n-1)*x)/(2*n-1); }  
+                return res; }
+            </text>
+    <button onclick="updateGraph()" >Update graph</button>
+</div>
+    <div class="input-block">
+   <label>space between sample points = <span id="x-space" contenteditable="true" onchange="xSpaceChange()" ></span>
+    <input id="xSpace"  name="xSpace" type="range" min="0.001" max="0.1" step="0.0001" value="0.001" style="width:40%;" onchange="updateGraph()">
+</div>
+</label>
+   <script>
+       let xSpace = document.getElementById("xSpace").value;
+       document.getElementById("x-space").innerText =  xSpace;
+       let funcInp = eval(document.getElementById("func-inp").innerText);
+       drawFourierGraph(funcInp,  "fourierGraph", xSpace = xSpace  );
+
+       const xSpaceChange = () => {
+           console.log("xspace changed");
+            let val = Numeber(evt.target.innerText);
+            if(val) {
+                document.getElementById("xSpace").value = val;
+                setTimeout(updateGraph, 150);
+            }
+       };
+
+       const updateGraph = () => {
+        let xSpace = document.getElementById("xSpace").value;
+        document.getElementById("x-space").innerText =  xSpace;
+        funcInp = eval(document.getElementById("func-inp").innerText);
+        drawFourierGraph(funcInp,  "fourierGraph", xSpace = xSpace );
+       };
+   </script>
+</body>
+
+</html>

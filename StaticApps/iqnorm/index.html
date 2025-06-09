@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+
+<head>
+  <title>Gezi Tekneleri Ve Kişisel Deniz Araçları Standartlar Listesi</title>
+  <meta name="author" content="Mustafa ŞENTÜRK 9901 Dnz. Uzm.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="dynamicListStyle.css">
+
+</head>
+
+<body onload="initPage()">
+
+  <div class="head-info">
+    <h1><span class="red">IQ</span><span class="blue">NORM</span></h1>
+    <h3>Gezi Tekneleri Ve Kişisel Deniz Araçları Yönetmeliği Kapsamındaki Standartlar Listesi</h3>
+    <h4>(Avrupa Birliği 2013/53/EU Direktifi)</h4>
+    <div id="application-info">
+      <p>
+        <span>Model bilgisi : </span>
+        <span class="print" id="appInfoToPrint"></span>
+        <span class="not-print">
+          <input class="inlineInput" type="text" name="application-date" id="application-date"
+            onChange="updateApplicationInfo()" />
+          <span>tarafından üretilen</span>
+          <input class="inlineInput" type="text" name="application-number" id="application-number"
+            onChange="updateApplicationInfo()" />
+          <span>model isimli tekne</span>
+        </span>
+      </p>
+    </div>
+    <HR>
+    <div id="selections">
+      <div id="selection">
+        <div class="sf-select">
+          <label for="sf-priority"> Öncelik Durumu:</label><br />
+          <select id="priority" name="sf-priority" class="sf-inp">
+            <option value="all" selected>Hepsi</option>
+            <option value="priority-1">1</option>
+            <option value="priority-2">2</option>
+          </select>
+        </div>
+
+        <div class="sf-select" class="not-print">
+          <label for="sf-type"> Tekne Tipi :</label><br />
+          <select id="type" name="sf-type" class="sf-inp">
+            <option value="all" selected>Seçiniz</option>
+            <option value="inflatable">Şişirilebilir bot</option>
+            <option value="sailing">Yelkenli</option>
+            <option value="personal-craft" title="Jetski ve benzeri su araçları">Kişisel Deniz Taşıtı</option>
+            <option value="engine-only" selected>Sadece motorlu</option>
+          </select>
+        </div>
+        <div class="sf-select">
+          <label for="sf-steeringgear"> Dümen Donanımına Sahip mi? :</label><br />
+          <select id="steeringgear" name="sf-steeringgear" class="sf-inp">
+            <option value="all" selected>Hepsi</option>
+            <option value="false">Mevcut değil</option>
+            <option value="sailingship-cable">Yelkenli tekne kablo-makara sistemi</option>
+            <option value="single-outboard-cable">Tek Kıçtan takma Motor telli dümen donanımı</option>
+          </select>
+        </div>
+        <div class="sf-select">
+          <span for="max-engine-power">Azami Motor Gücü </span>
+          <input id="maxpower" class="sf-inp inlineInput" type="text" name="max-engine-power" value="all">
+          <span for="ship-length">Gemi Gövde Boyu: </span>
+          <input id="shiplength" class="sf-inp inlineInput" type="text" name="ship-length" value="all">
+        </div>
+      </div>
+    </div>
+    <!-- ................................................... -->
+
+    <hr />
+    <div id="checklist-body" class="not-print">
+      <div>
+        <ol class="standard-list">
+          <li class="type-dependant maxpower-dependant priority-dependant" data-priority="= priority-2"
+            data-type="= inflatable" data-maxpower="< 4.5">
+            <details>
+              <summary>
+                TS EN ISO 6185-1 Şişirilebilen Botlar-Bölüm 1: Azami Motor Gücü 4,5 kW'a Kadar Olan Botlar
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="type-dependant maxpower-dependant priority-dependant" data-priority="= priority-2"
+            data-type="= inflatable" data-maxpower="< 15&> 4.5">
+            <details>
+              <summary>
+                TS EN ISO 6185-2 Şişirilebilen Botlar-Bölüm 2: Azami Motor Gücü 4,5 kW İla 15 kW (15 kW Dahil) Olan
+                Botlar 
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="type-dependant maxpower-dependant priority-dependant" data-priority="= priority-2"
+            data-type="= inflatable" data-maxpower="> 15">
+            <details>
+              <summary>
+                TS EN ISO 6185-3 Şişirilebilen Botlar - Bölüm 3: Azami Motor Gücü 15 kW ’dan Büyük Olan Botlar 
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="type-dependant maxpower-dependant shiplength-dependant priority-dependant"
+            data-priority="= priority-2" data-type="= inflatable" data-maxpower=">= 15" data-shiplength="> 8&< 24">
+            <details>
+              <summary>
+                TS EN ISO 6185-4 Şişirilebilen Botlar - Bölüm 4: Azamî motor gücü 15 kW ve 15 kW ’dan büyük, gövde
+                uzunluğu 8 m-24 m arası botlar 
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 7840 Küçük Tekne-Yakıt Hortumları-Yangına Dayanıklı
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 8469 Küçük Tekne- Ateşe Dayanıksız Yakıt Hortumları
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 8665 Küçük Tekne-Deniz Motorları ve Sistemleri-Güç Ölçümleri ve Beyanları
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 8666 Küçük Tekne – Temel Veriler
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 8846 Küçük tekne - Elektrikli cihazlar - Alev Alabilir Gazların Tutuşmasına Karşı Koruma
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="steeringgear-dependant priority-dependant" data-priority="= priority-1"
+            data-steeringgear="= sailingship-cable">
+            <details>
+              <summary>
+                TS EN ISO 8847 Küçük Tekne – Dümen Dolabı – Kablo ve Makara Sistemleri
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 8848 Küçük tekne - Uzaktan Kumandalı Sistemler
+              </summary>
+              <ul>
+                Çalışılmadı henüz
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 8849 Küçük Tekne – Elektrikle Çalışan Doğru Akım Sintine Pompaları
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 9093-1 Küçük Tekne -Tekne Yüzeyine Takılan Deniz Tipi Vanalar ve Bağlantı Parçaları- Bölüm 1:
+                Metalik 
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 9093-2 Küçük Tekne – Tekne Yüzeyine Takılan Deniz Tipi Vanalar ve Bağlantı Parçaları – Metalik
+                Olmayan  
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 9094 Küçük Tekne - Yangına Karşı Korunma  
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 9097 Küçük Tekne-Elektrikli Vantilatörler 
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="steeringgear-dependant maxpower-dependant priority-dependant" data-priority="= priority-1"
+            data-steeringgear="= single-outboard-cable" data-maxpower=">= 15&< 40">
+            <details>
+              <summary>
+                TS EN ISO 9775 Küçük Tekne - 15 kw ila 40 kw Gücündeki, Tekli, Dıştan Takma Motorlar İçin Uzaktan
+                Kumandalı (Tel Halat Kontrollü ) Dümen Sistemleri
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 10088  Küçük tekne – Kalıcı olarak yerleştirilen yakıt sistemleri ve sabit yakıt tankları 
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 10133 Küçük Tekne – Elektrik Sistemleri – Çok Düşük Gerilimli Doğru Akım (d.a.) Tesisatları
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 10239 Küçük Tekne-Sıvılaştırılmış Petrol Gazı (LPG) İle Çalışan Sistemler 
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="steeringgear-dependant priority-dependant" data-priority="= priority-1"
+            data-steeringgear="= hydrolic">
+            <details>
+              <summary>
+                TS EN ISO 10592  Gezi Tekneleri - Hidrolik Dümen Sistemleri 
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 11105  Küçük Tekne- Benzinli Motor ve/veya Benzin Tankı (Deposu) Bölmesinin Havalandırılması 
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 11192 Küçük Tekne - Grafik Semboller
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 11547 Küçük Tekne- Vitese Takılı Durumda Çalıştırmanın Önlenmesi 
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="shiplength-dependant priority-dependant" data-shiplength="< 8" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 11592 - 1 Küçük tekne - Manevra hızı ile azami hareket kuvveti derecesinin belirlenmesi -
+                Bölüm
+                1: Gövde uzunluğu 8 m’den daha kısa olan deniz araçları
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="">
+            <details>
+              <summary>
+                TS EN ISO 11812 - 1 Küçük Tekne – Su Geçirmez ve Hızla Su Tahliye Eden Dümen Odaları
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 12215-1 Küçük Tekne- Tekne Yapımı ve Ahşap Gövde Elemanları- Bölüm 1:
+                Malzemeler, Termoset Reçineler, Cam Elyafı (Cam Yünü) Takviyeli, Referans Tabaka 
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 12215-2 Küçük Tekne – Tekne Yapımı ve Ahşap Gövde Elemanları – Bölüm 2: Malzemeler: Sandviç
+                Yapı
+                İçin İç Malzemeler, Koruma Amaçlı Kaplama Malzemeleri 
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 12215-3 Küçük Tekne - Tekne Yapımı ve Ahşap Gövde Elemanları - Bölüm 3: Malzemeler: Çelik,
+                Alüminyum Alaşımları, Ahşap, Diğer Malzemeler
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 12215-4 Küçük Tekne - Tekne Yapımı ve Ahşap Gövde Elemanları - Bölüm 4: İmal Yeri ve İmalat
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 12215-5 Küçük tekne - Tekne yapımı ve ahşap gövde elemanları - Bölüm 5: Tek gövdeli tekneler
+                için tasarım basınçları, tasarım gerilmeleri, tekne yapımında kullanılacak kerestelerin belirlenmesi
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 12215-6 Küçük tekne - Tekne yapımı ve ahşap gövde elemanları - Bölüm 6: Yapısal düzenlemeler
+                ve
+                ayrıntılar
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 12215-8 Küçük tekne - Tekne yapımı ve ahşap gövde elemanları - Bölüm 8: Dümen
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 12215-9 Küçük tekne - Tekne yapımı ve ahşap gövde elemanları - Bölüm 9:  Yelkenli tekne
+                uzantıları
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant shiplength-dependant type-dependant" data-type="!= sailing"
+            data-shiplength=">= 6" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 12217-1 Küçük Tekne – Denge ve Yüzebilirlik Değerlendirmesi ve Sınıflandırılması – Bölüm 1:
+                Gövde Boyu 6 m veya Daha Uzun Olan Gezinti Amaçlı Olmayan Botlar 
+              </summary>
+              Boyu 6 metre ve üzeri yelkenli olmayan tekneler için
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant shiplength-dependant type-dependant" data-type="= sailing"
+            data-shiplength=">= 6" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 12217-2 Küçük Tekne – Denge ve Yüzebilirlik Değerlendirmesi ve Sınıflandırılması – Bölüm 2:
+                Gövde Boyu 6 m veya Daha Uzun Olan Gezinti Amaçlı Botlar 
+              </summary Boyu 6 metre ve üzeri yelkenli tekneler için>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant shiplength-dependant" data-shiplength="< 6" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 12217-3 Küçük Tekne – Denge ve Yüzebilirlik Değerlendirmesi ve Sınıflandırılması – Bölüm 3 :
+                Gövde Uzunluğu 6 m’den Daha Kısa Olan Botlar
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 13297 Küçük Tekne – Elektrik Sistemleri – Alternatif Akım Tesisatları  
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant type-dependant" data-type="= personal-craft" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 13590 Küçük Tekne - Kişisel Tekne - Kontrol ve Sistem Tesisatı Kuralları  
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 13929 Küçük Tekne - Dümen Dişlisi - Dişliye Bağlı Sistemler
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 14509-1 Küçük Tekne - Motorlu Gezi Teknelerinden Havaya Yayılan Sesin Ölçülmesi -Bölüm1:Yandan
+                geçiş ölçüm prosedürü
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 14509-3 Küçük Tekne - Motorlu gezi teknelerinden havaya yayılan ses - Bölüm 3: Hesaplama ve
+                ölçme işlemleri kullanılarak ses değerlendirmesi
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 14895 Küçük Tekne – Sıvı Yakıtla Çalışan Mutfak Ocakları 
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 14946 Küçük Tekne – Azami Yük Kapasitesi  
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 15083 Küçük Tekne – Sintine Suyu Pompalama Sistemleri   
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 15084 Küçük Tekne – Demirleme, Şamandıraya Bağlama ve Yedeğe Alıp Çekme – Bağlama Noktaları   
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 15584 Küçük Tekne- İçten Takmalı Benzinle Çalışan Motorlar- Motora Bağlanan Yakıt ve Elektrik
+                İle İlgili Parçalar  
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 15609 LPG Donanım ve Aksesuarları – Botlar, yatlar ve diğer tekneler için LPG yanma sistemleri
+                – Montaj kuralları 
+              </summary>
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 15652 Küçük Tekne – Tekne İçinden Kumanda Edilen Mini Jet Botlar İçin Uzaktan Dümen Sistemleri
+                <ul>
+
+                </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 16147 Küçük Tekne – İçten Takmalı Dizel Motorlar – Motora Monte Edilmiş Yakıt ve Elektrik
+                Sistemi Bileşenleri 
+                <ul>
+
+                </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-1">
+            <details>
+              <summary>
+                TS EN ISO 16180Küçük tekne-Seyrüsefer ışıklandırmaları-Montaj, çıkarma ve görünebilirlik
+                <ul>
+
+                </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 16315 Küçük tekneler - Elektrik tahrik sistemi
+                <ul>
+
+                </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 18854 Küçük tekne - Pistonlu içten yanmalı motorların egzoz emisyon ölçümü - Gaz ve partikül
+                egzoz emisyonlarının test yatağı ölçümü
+                <ul>
+
+                </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 19009 Küçük tekne - Elektrikli seyir ışıkları- LED lambaların performansı
+                <ul>
+
+                </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 21487 Küçük Tekne – Kalıcı Olarak Yerleştirilen Petrol ve Dizel Yakıt Tankları
+                <ul>
+
+                </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN ISO 25197  Küçük tekne - direksiyon, vites ve gaz için elektronik / Elektrik kontrol sistemleri
+                <ul>
+
+                </ul>
+            </details>
+          </li>
+          <li class="priority-dependant" data-priority="= priority-2">
+            <details>
+              <summary>
+                TS EN 60092-507 Gemilerde elektrik tesisatı - Bölüm 507: Gezinti gemileri
+              </summary>
+              Electrical installations in ships - Part 507 - Small vessels
+              <ul>
+
+              </ul>
+            </details>
+          </li>
+
+
+
+        </ol>
+      </div>
+    </div>
+
+    <script src="scope.js"></script>
+
+</body>
+
+</html>

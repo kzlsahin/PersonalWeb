@@ -1,0 +1,1002 @@
+[
+  {
+    "area": 240.9588623046875,
+    "noicelevel": 110.5798568725586,
+    "envSight": 100.01324462890625,
+    "gardenArea": 17.01068878173828,
+    "hauseType": 1,
+    "price": 680569,
+    "yearOld": 15.530274391174316,
+    "transportation": 2387.756591796875
+  },
+  {
+    "area": 63.44023895263672,
+    "noicelevel": 65.39337158203125,
+    "envSight": 247.826416015625,
+    "gardenArea": 9.31251335144043,
+    "hauseType": 2,
+    "price": 188472,
+    "yearOld": 27.21339225769043,
+    "transportation": 1007.5747680664062
+  },
+  {
+    "area": 212.11415100097656,
+    "noicelevel": 107.4931640625,
+    "envSight": 57.3197135925293,
+    "gardenArea": 7.1891069412231445,
+    "hauseType": 3,
+    "price": 317121,
+    "yearOld": 25.88521385192871,
+    "transportation": 616.2356567382812
+  },
+  {
+    "area": 126.21709442138672,
+    "noicelevel": 106.18961334228516,
+    "envSight": 53.08383560180664,
+    "gardenArea": 18.305269241333008,
+    "hauseType": 4,
+    "price": 280404,
+    "yearOld": 5.9308342933654785,
+    "transportation": 353.70294189453125
+  },
+  {
+    "area": 134.65975952148438,
+    "noicelevel": 62.09083557128906,
+    "envSight": 248.15818786621094,
+    "gardenArea": 28.088176727294922,
+    "hauseType": 4,
+    "price": 263198,
+    "yearOld": 27.00725746154785,
+    "transportation": 747.907958984375
+  },
+  {
+    "area": 248.4993896484375,
+    "noicelevel": 107.14326477050781,
+    "envSight": 129.53176879882812,
+    "gardenArea": 11.793783187866211,
+    "hauseType": 0,
+    "price": 539972,
+    "yearOld": 16.63823127746582,
+    "transportation": 300.8538818359375
+  },
+  {
+    "area": 69.43457794189453,
+    "noicelevel": 110.44526672363281,
+    "envSight": 199.29664611816406,
+    "gardenArea": 2.869236469268799,
+    "hauseType": 2,
+    "price": 132105,
+    "yearOld": 24.73332977294922,
+    "transportation": 1095.1187744140625
+  },
+  {
+    "area": 223.685302734375,
+    "noicelevel": 98.47393798828125,
+    "envSight": 192.70005798339844,
+    "gardenArea": 8.919513702392578,
+    "hauseType": 0,
+    "price": 532978,
+    "yearOld": 17.28128433227539,
+    "transportation": 1953.6441650390625
+  },
+  {
+    "area": 209.95938110351562,
+    "noicelevel": 107.52168273925781,
+    "envSight": 89.55552673339844,
+    "gardenArea": 42.677955627441406,
+    "hauseType": 2,
+    "price": 441835,
+    "yearOld": 22.205379486083984,
+    "transportation": 621.8580932617188
+  },
+  {
+    "area": 66.56676483154297,
+    "noicelevel": 112.56854248046875,
+    "envSight": 233.46812438964844,
+    "gardenArea": 24.598657608032227,
+    "hauseType": 1,
+    "price": 203697,
+    "yearOld": 11.919990539550781,
+    "transportation": 1089.645263671875
+  },
+  {
+    "area": 138.64645385742188,
+    "noicelevel": 62.76259994506836,
+    "envSight": 210.51312255859375,
+    "gardenArea": 38.315345764160156,
+    "hauseType": 1,
+    "price": 502833,
+    "yearOld": 26.781635284423828,
+    "transportation": 1187.6217041015625
+  },
+  {
+    "area": 147.82861328125,
+    "noicelevel": 95.15359497070312,
+    "envSight": 166.07009887695312,
+    "gardenArea": 19.007530212402344,
+    "hauseType": 1,
+    "price": 566627,
+    "yearOld": 12.005032539367676,
+    "transportation": 2552.70654296875
+  },
+  {
+    "area": 61.403709411621094,
+    "noicelevel": 102.352294921875,
+    "envSight": 239.7782440185547,
+    "gardenArea": 1.0557115077972412,
+    "hauseType": 0,
+    "price": 192986,
+    "yearOld": 6.915823936462402,
+    "transportation": 2107.583740234375
+  },
+  {
+    "area": 121.7379379272461,
+    "noicelevel": 119.65644073486328,
+    "envSight": 60.77864074707031,
+    "gardenArea": 23.27100944519043,
+    "hauseType": 0,
+    "price": 266094,
+    "yearOld": 10.102184295654297,
+    "transportation": 2897.48193359375
+  },
+  {
+    "area": 225.4857635498047,
+    "noicelevel": 85.17003631591797,
+    "envSight": 140.46559143066406,
+    "gardenArea": 45.76310348510742,
+    "hauseType": 3,
+    "price": 584025,
+    "yearOld": 14.675946235656738,
+    "transportation": 423.21649169921875
+  },
+  {
+    "area": 101.18336486816406,
+    "noicelevel": 74.06199645996094,
+    "envSight": 138.84597778320312,
+    "gardenArea": 47.87337875366211,
+    "hauseType": 2,
+    "price": 442250,
+    "yearOld": 9.705162048339844,
+    "transportation": 1809.9779052734375
+  },
+  {
+    "area": 176.0531005859375,
+    "noicelevel": 114.75363159179688,
+    "envSight": 60.22010040283203,
+    "gardenArea": 18.423023223876953,
+    "hauseType": 4,
+    "price": 318259,
+    "yearOld": 8.126794815063477,
+    "transportation": 773.0098266601562
+  },
+  {
+    "area": 243.79586791992188,
+    "noicelevel": 85.0608901977539,
+    "envSight": 97.20166015625,
+    "gardenArea": 43.37099838256836,
+    "hauseType": 4,
+    "price": 464034,
+    "yearOld": 18.856670379638672,
+    "transportation": 1087.3809814453125
+  },
+  {
+    "area": 163.64967346191406,
+    "noicelevel": 107.82191467285156,
+    "envSight": 244.9342041015625,
+    "gardenArea": 32.00688934326172,
+    "hauseType": 4,
+    "price": 231266,
+    "yearOld": 19.810138702392578,
+    "transportation": 855.7640380859375
+  },
+  {
+    "area": 104.75041961669922,
+    "noicelevel": 95.090576171875,
+    "envSight": 227.13255310058594,
+    "gardenArea": 38.603240966796875,
+    "hauseType": 4,
+    "price": 223602,
+    "yearOld": 11.061448097229004,
+    "transportation": 395.0732116699219
+  },
+  {
+    "area": 185.76446533203125,
+    "noicelevel": 76.09068298339844,
+    "envSight": 188.40846252441406,
+    "gardenArea": 43.79060363769531,
+    "hauseType": 0,
+    "price": 819853,
+    "yearOld": 5.6833953857421875,
+    "transportation": 1087.737060546875
+  },
+  {
+    "area": 112.252685546875,
+    "noicelevel": 63.63249969482422,
+    "envSight": 203.02633666992188,
+    "gardenArea": 10.99255657196045,
+    "hauseType": 0,
+    "price": 701500,
+    "yearOld": 0.30213654041290283,
+    "transportation": 778.5802612304688
+  },
+  {
+    "area": 145.95010375976562,
+    "noicelevel": 116.30411529541016,
+    "envSight": 199.8251953125,
+    "gardenArea": 47.5128288269043,
+    "hauseType": 0,
+    "price": 455502,
+    "yearOld": 2.2888147830963135,
+    "transportation": 857.760498046875
+  },
+  {
+    "area": 237.89906311035156,
+    "noicelevel": 63.036712646484375,
+    "envSight": 50.68256759643555,
+    "gardenArea": 30.8897762298584,
+    "hauseType": 1,
+    "price": 1088423,
+    "yearOld": 16.96131706237793,
+    "transportation": 2220.351806640625
+  },
+  {
+    "area": 216.796142578125,
+    "noicelevel": 118.16328430175781,
+    "envSight": 57.81703186035156,
+    "gardenArea": 6.206381320953369,
+    "hauseType": 0,
+    "price": 654083,
+    "yearOld": 2.3313796520233154,
+    "transportation": 2468.98291015625
+  },
+  {
+    "area": 83.54359436035156,
+    "noicelevel": 100.88902282714844,
+    "envSight": 229.08737182617188,
+    "gardenArea": 26.76651382446289,
+    "hauseType": 0,
+    "price": 194828,
+    "yearOld": 17.01580810546875,
+    "transportation": 1875.47021484375
+  },
+  {
+    "area": 78.43934631347656,
+    "noicelevel": 107.56260681152344,
+    "envSight": 195.13233947753906,
+    "gardenArea": 48.809112548828125,
+    "hauseType": 1,
+    "price": 189832,
+    "yearOld": 23.410486221313477,
+    "transportation": 1032.400634765625
+  },
+  {
+    "area": 144.29519653320312,
+    "noicelevel": 76.02664184570312,
+    "envSight": 172.43447875976562,
+    "gardenArea": 7.193022727966309,
+    "hauseType": 2,
+    "price": 442830,
+    "yearOld": 21.43333625793457,
+    "transportation": 1937.4061279296875
+  },
+  {
+    "area": 173.39146423339844,
+    "noicelevel": 112.1585464477539,
+    "envSight": 108.79438018798828,
+    "gardenArea": 38.44112777709961,
+    "hauseType": 0,
+    "price": 264970,
+    "yearOld": 28.41214370727539,
+    "transportation": 2794.601318359375
+  },
+  {
+    "area": 230.0877227783203,
+    "noicelevel": 118.83229064941406,
+    "envSight": 88.66693115234375,
+    "gardenArea": 8.652392387390137,
+    "hauseType": 4,
+    "price": 542761,
+    "yearOld": 0.18777072429656982,
+    "transportation": 1484.4447021484375
+  },
+  {
+    "area": 119.67025756835938,
+    "noicelevel": 99.52994537353516,
+    "envSight": 176.6796875,
+    "gardenArea": 37.95928955078125,
+    "hauseType": 2,
+    "price": 239373,
+    "yearOld": 29.262958526611328,
+    "transportation": 2842.468017578125
+  },
+  {
+    "area": 234.63925170898438,
+    "noicelevel": 77.39370727539062,
+    "envSight": 101.19261932373047,
+    "gardenArea": 5.6877970695495605,
+    "hauseType": 0,
+    "price": 589721,
+    "yearOld": 24.471004486083984,
+    "transportation": 2691.949951171875
+  },
+  {
+    "area": 64.28848266601562,
+    "noicelevel": 85.38925170898438,
+    "envSight": 101.42550659179688,
+    "gardenArea": 7.335236549377441,
+    "hauseType": 2,
+    "price": 233885,
+    "yearOld": 11.825478553771973,
+    "transportation": 1075.124755859375
+  },
+  {
+    "area": 136.83108520507812,
+    "noicelevel": 86.66248321533203,
+    "envSight": 145.36026000976562,
+    "gardenArea": 48.52450942993164,
+    "hauseType": 3,
+    "price": 455682,
+    "yearOld": 6.544859886169434,
+    "transportation": 734.58154296875
+  },
+  {
+    "area": 116.45182800292969,
+    "noicelevel": 117.16869354248047,
+    "envSight": 125.14996337890625,
+    "gardenArea": 45.17750549316406,
+    "hauseType": 1,
+    "price": 267757,
+    "yearOld": 19.568401336669922,
+    "transportation": 2205.093505859375
+  },
+  {
+    "area": 183.97625732421875,
+    "noicelevel": 74.7418212890625,
+    "envSight": 247.95303344726562,
+    "gardenArea": 15.916082382202148,
+    "hauseType": 1,
+    "price": 759564,
+    "yearOld": 16.854507446289062,
+    "transportation": 1991.9766845703125
+  },
+  {
+    "area": 158.41635131835938,
+    "noicelevel": 71.709228515625,
+    "envSight": 182.12069702148438,
+    "gardenArea": 10.858482360839844,
+    "hauseType": 2,
+    "price": 637121,
+    "yearOld": 12.93097972869873,
+    "transportation": 2118.512451171875
+  },
+  {
+    "area": 67.10621643066406,
+    "noicelevel": 74.85816192626953,
+    "envSight": 194.15000915527344,
+    "gardenArea": 46.82789611816406,
+    "hauseType": 2,
+    "price": 309231,
+    "yearOld": 8.21832275390625,
+    "transportation": 81.95289611816406
+  },
+  {
+    "area": 64.34947204589844,
+    "noicelevel": 66.39910888671875,
+    "envSight": 59.367523193359375,
+    "gardenArea": 4.640829563140869,
+    "hauseType": 0,
+    "price": 244915,
+    "yearOld": 12.528828620910645,
+    "transportation": 1261.554443359375
+  },
+  {
+    "area": 232.2393341064453,
+    "noicelevel": 99.46749877929688,
+    "envSight": 221.318359375,
+    "gardenArea": 43.7752799987793,
+    "hauseType": 4,
+    "price": 331413,
+    "yearOld": 24.02916145324707,
+    "transportation": 413.1741027832031
+  },
+  {
+    "area": 80.31396484375,
+    "noicelevel": 83.2148208618164,
+    "envSight": 218.51670837402344,
+    "gardenArea": 21.658906936645508,
+    "hauseType": 4,
+    "price": 169528,
+    "yearOld": 15.738510131835938,
+    "transportation": 953.9539184570312
+  },
+  {
+    "area": 167.39874267578125,
+    "noicelevel": 64.69912719726562,
+    "envSight": 117.31705474853516,
+    "gardenArea": 31.512510299682617,
+    "hauseType": 3,
+    "price": 453505,
+    "yearOld": 20.24604034423828,
+    "transportation": 2001.0740966796875
+  },
+  {
+    "area": 129.34396362304688,
+    "noicelevel": 105.51775360107422,
+    "envSight": 174.86941528320312,
+    "gardenArea": 12.270712852478027,
+    "hauseType": 4,
+    "price": 278310,
+    "yearOld": 7.101604461669922,
+    "transportation": 157.1158905029297
+  },
+  {
+    "area": 141.93338012695312,
+    "noicelevel": 76.19786071777344,
+    "envSight": 228.50732421875,
+    "gardenArea": 33.82228469848633,
+    "hauseType": 2,
+    "price": 481293,
+    "yearOld": 17.47203826904297,
+    "transportation": 1895.8887939453125
+  },
+  {
+    "area": 151.64572143554688,
+    "noicelevel": 74.20579528808594,
+    "envSight": 76.29365539550781,
+    "gardenArea": 14.940849304199219,
+    "hauseType": 3,
+    "price": 489385,
+    "yearOld": 10.99390983581543,
+    "transportation": 1203.783203125
+  },
+  {
+    "area": 85.40189361572266,
+    "noicelevel": 109.33810424804688,
+    "envSight": 210.46441650390625,
+    "gardenArea": 26.864301681518555,
+    "hauseType": 4,
+    "price": 101984,
+    "yearOld": 26.14201545715332,
+    "transportation": 1001.3466186523438
+  },
+  {
+    "area": 176.49171447753906,
+    "noicelevel": 94.89602661132812,
+    "envSight": 139.8114776611328,
+    "gardenArea": 9.26624870300293,
+    "hauseType": 1,
+    "price": 960606,
+    "yearOld": 2.658142566680908,
+    "transportation": 286.39599609375
+  },
+  {
+    "area": 128.90313720703125,
+    "noicelevel": 97.69056701660156,
+    "envSight": 67.40435791015625,
+    "gardenArea": 14.220377922058105,
+    "hauseType": 0,
+    "price": 281254,
+    "yearOld": 21.168750762939453,
+    "transportation": 519.47314453125
+  },
+  {
+    "area": 77.34720611572266,
+    "noicelevel": 64.69903564453125,
+    "envSight": 75.54714965820312,
+    "gardenArea": 29.221529006958008,
+    "hauseType": 1,
+    "price": 559351,
+    "yearOld": 3.0806331634521484,
+    "transportation": 2020.43505859375
+  },
+  {
+    "area": 93.84297180175781,
+    "noicelevel": 108.52140808105469,
+    "envSight": 90.78862762451172,
+    "gardenArea": 23.772912979125977,
+    "hauseType": 3,
+    "price": 148101,
+    "yearOld": 22.844940185546875,
+    "transportation": 2821.793701171875
+  },
+  {
+    "area": 226.0205078125,
+    "noicelevel": 92.68836212158203,
+    "envSight": 87.94941711425781,
+    "gardenArea": 39.141456604003906,
+    "hauseType": 3,
+    "price": 544149,
+    "yearOld": 14.40818977355957,
+    "transportation": 222.37806701660156
+  },
+  {
+    "area": 202.947509765625,
+    "noicelevel": 75.30732727050781,
+    "envSight": 100.54554748535156,
+    "gardenArea": 33.830894470214844,
+    "hauseType": 4,
+    "price": 823790,
+    "yearOld": 0.6338810920715332,
+    "transportation": 24.79845428466797
+  },
+  {
+    "area": 245.82205200195312,
+    "noicelevel": 97.93446350097656,
+    "envSight": 226.57174682617188,
+    "gardenArea": 13.521584510803223,
+    "hauseType": 0,
+    "price": 585516,
+    "yearOld": 17.544910430908203,
+    "transportation": 1854.45263671875
+  },
+  {
+    "area": 118.54428100585938,
+    "noicelevel": 61.37146759033203,
+    "envSight": 135.62339782714844,
+    "gardenArea": 11.158919334411621,
+    "hauseType": 1,
+    "price": 749692,
+    "yearOld": 7.442541599273682,
+    "transportation": 49.12784957885742
+  },
+  {
+    "area": 202.34988403320312,
+    "noicelevel": 63.755558013916016,
+    "envSight": 201.904296875,
+    "gardenArea": 45.207855224609375,
+    "hauseType": 2,
+    "price": 585784,
+    "yearOld": 29.148229598999023,
+    "transportation": 1982.794677734375
+  },
+  {
+    "area": 73.64897155761719,
+    "noicelevel": 87.10334777832031,
+    "envSight": 89.4080810546875,
+    "gardenArea": 10.753414154052734,
+    "hauseType": 1,
+    "price": 224597,
+    "yearOld": 24.049474716186523,
+    "transportation": 2083.504150390625
+  },
+  {
+    "area": 119.80027770996094,
+    "noicelevel": 113.71894836425781,
+    "envSight": 132.84967041015625,
+    "gardenArea": 45.34109878540039,
+    "hauseType": 1,
+    "price": 560568,
+    "yearOld": 0.5562204122543335,
+    "transportation": 391.7806396484375
+  },
+  {
+    "area": 243.37440490722656,
+    "noicelevel": 112.44499206542969,
+    "envSight": 141.89503479003906,
+    "gardenArea": 3.7005722522735596,
+    "hauseType": 0,
+    "price": 483723,
+    "yearOld": 17.083576202392578,
+    "transportation": 557.078369140625
+  },
+  {
+    "area": 181.25491333007812,
+    "noicelevel": 106.86009216308594,
+    "envSight": 57.64896774291992,
+    "gardenArea": 22.204988479614258,
+    "hauseType": 2,
+    "price": 774755,
+    "yearOld": 0.939064621925354,
+    "transportation": 1635.56640625
+  },
+  {
+    "area": 206.73057556152344,
+    "noicelevel": 89.06904602050781,
+    "envSight": 229.24180603027344,
+    "gardenArea": 6.314537048339844,
+    "hauseType": 3,
+    "price": 471356,
+    "yearOld": 17.682191848754883,
+    "transportation": 2714.7314453125
+  },
+  {
+    "area": 158.18026733398438,
+    "noicelevel": 63.11626052856445,
+    "envSight": 174.60919189453125,
+    "gardenArea": 44.19723892211914,
+    "hauseType": 2,
+    "price": 785603,
+    "yearOld": 8.812553405761719,
+    "transportation": 2186.908935546875
+  },
+  {
+    "area": 90.77910614013672,
+    "noicelevel": 110.54927825927734,
+    "envSight": 56.04150390625,
+    "gardenArea": 0.3392815589904785,
+    "hauseType": 0,
+    "price": 243425,
+    "yearOld": 8.315652847290039,
+    "transportation": 258.4953308105469
+  },
+  {
+    "area": 85.40921020507812,
+    "noicelevel": 111.31877136230469,
+    "envSight": 200.9838409423828,
+    "gardenArea": 31.06309700012207,
+    "hauseType": 2,
+    "price": 170528,
+    "yearOld": 22.13875389099121,
+    "transportation": 2317.977294921875
+  },
+  {
+    "area": 233.1093292236328,
+    "noicelevel": 104.63017272949219,
+    "envSight": 200.21380615234375,
+    "gardenArea": 20.33224105834961,
+    "hauseType": 0,
+    "price": 840359,
+    "yearOld": 2.792004346847534,
+    "transportation": 1305.445556640625
+  },
+  {
+    "area": 79.79415130615234,
+    "noicelevel": 107.46817016601562,
+    "envSight": 95.81282043457031,
+    "gardenArea": 4.234105110168457,
+    "hauseType": 1,
+    "price": 274380,
+    "yearOld": 10.898519515991211,
+    "transportation": 71.65829467773438
+  },
+  {
+    "area": 108.85643005371094,
+    "noicelevel": 90.32878112792969,
+    "envSight": 80.6004638671875,
+    "gardenArea": 12.213632583618164,
+    "hauseType": 0,
+    "price": 278660,
+    "yearOld": 18.261638641357422,
+    "transportation": 315.2821044921875
+  },
+  {
+    "area": 63.37117004394531,
+    "noicelevel": 97.66972351074219,
+    "envSight": 105.93759155273438,
+    "gardenArea": 21.624300003051758,
+    "hauseType": 3,
+    "price": 117624,
+    "yearOld": 21.998062133789062,
+    "transportation": 1053.553955078125
+  },
+  {
+    "area": 111.68997192382812,
+    "noicelevel": 112.98160552978516,
+    "envSight": 75.96073150634766,
+    "gardenArea": 20.145584106445312,
+    "hauseType": 2,
+    "price": 412796,
+    "yearOld": 2.1920907497406006,
+    "transportation": 2529.939453125
+  },
+  {
+    "area": 105.59568786621094,
+    "noicelevel": 90.14457702636719,
+    "envSight": 241.51699829101562,
+    "gardenArea": 2.4851770401000977,
+    "hauseType": 3,
+    "price": 232686,
+    "yearOld": 18.54255485534668,
+    "transportation": 1187.364990234375
+  },
+  {
+    "area": 107.14654541015625,
+    "noicelevel": 119.03030395507812,
+    "envSight": 121.38710021972656,
+    "gardenArea": 25.29994010925293,
+    "hauseType": 0,
+    "price": 148208,
+    "yearOld": 28.263601303100586,
+    "transportation": 268.60076904296875
+  },
+  {
+    "area": 207.64305114746094,
+    "noicelevel": 60.5510368347168,
+    "envSight": 190.1294403076172,
+    "gardenArea": 10.186812400817871,
+    "hauseType": 0,
+    "price": 554468,
+    "yearOld": 28.733715057373047,
+    "transportation": 2250.778076171875
+  },
+  {
+    "area": 169.97677612304688,
+    "noicelevel": 98.3358383178711,
+    "envSight": 188.76849365234375,
+    "gardenArea": 33.071956634521484,
+    "hauseType": 1,
+    "price": 845690,
+    "yearOld": 3.7942190170288086,
+    "transportation": 335.8636779785156
+  },
+  {
+    "area": 109.46446228027344,
+    "noicelevel": 68.45291137695312,
+    "envSight": 196.2538299560547,
+    "gardenArea": 22.64299964904785,
+    "hauseType": 2,
+    "price": 656385,
+    "yearOld": 2.7670741081237793,
+    "transportation": 2066.59521484375
+  },
+  {
+    "area": 221.90652465820312,
+    "noicelevel": 118.53573608398438,
+    "envSight": 173.15567016601562,
+    "gardenArea": 28.96929168701172,
+    "hauseType": 4,
+    "price": 240105,
+    "yearOld": 24.230735778808594,
+    "transportation": 2606.671630859375
+  },
+  {
+    "area": 238.5703887939453,
+    "noicelevel": 87.98967742919922,
+    "envSight": 159.14288330078125,
+    "gardenArea": 48.69879150390625,
+    "hauseType": 0,
+    "price": 585500,
+    "yearOld": 20.877593994140625,
+    "transportation": 2561.89208984375
+  },
+  {
+    "area": 220.4440155029297,
+    "noicelevel": 65.158447265625,
+    "envSight": 221.40631103515625,
+    "gardenArea": 45.77880096435547,
+    "hauseType": 0,
+    "price": 618654,
+    "yearOld": 24.617151260375977,
+    "transportation": 2298.501708984375
+  },
+  {
+    "area": 215.49977111816406,
+    "noicelevel": 78.03449249267578,
+    "envSight": 206.834716796875,
+    "gardenArea": 35.882389068603516,
+    "hauseType": 0,
+    "price": 1100057,
+    "yearOld": 1.7838388681411743,
+    "transportation": 1006.0079956054688
+  },
+  {
+    "area": 229.38490295410156,
+    "noicelevel": 61.94679641723633,
+    "envSight": 148.93934631347656,
+    "gardenArea": 25.47093963623047,
+    "hauseType": 3,
+    "price": 1252673,
+    "yearOld": 0.4322129487991333,
+    "transportation": 2848.1494140625
+  },
+  {
+    "area": 193.79869079589844,
+    "noicelevel": 115.8113784790039,
+    "envSight": 56.236995697021484,
+    "gardenArea": 30.63714599609375,
+    "hauseType": 0,
+    "price": 455468,
+    "yearOld": 9.78718376159668,
+    "transportation": 1384.6455078125
+  },
+  {
+    "area": 173.99606323242188,
+    "noicelevel": 74.70133209228516,
+    "envSight": 205.89089965820312,
+    "gardenArea": 3.644814968109131,
+    "hauseType": 3,
+    "price": 501865,
+    "yearOld": 14.49359130859375,
+    "transportation": 2099.491455078125
+  },
+  {
+    "area": 97.3483657836914,
+    "noicelevel": 106.64759826660156,
+    "envSight": 118.55418395996094,
+    "gardenArea": 33.449119567871094,
+    "hauseType": 0,
+    "price": 193183,
+    "yearOld": 20.388134002685547,
+    "transportation": 567.151123046875
+  },
+  {
+    "area": 165.0284423828125,
+    "noicelevel": 68.7593765258789,
+    "envSight": 107.83586120605469,
+    "gardenArea": 39.8031120300293,
+    "hauseType": 4,
+    "price": 549263,
+    "yearOld": 6.039619445800781,
+    "transportation": 1313.475341796875
+  },
+  {
+    "area": 192.91299438476562,
+    "noicelevel": 104.12171173095703,
+    "envSight": 99.98750305175781,
+    "gardenArea": 6.477734565734863,
+    "hauseType": 1,
+    "price": 591563,
+    "yearOld": 15.80451774597168,
+    "transportation": 599.8237915039062
+  },
+  {
+    "area": 143.00253295898438,
+    "noicelevel": 116.70465087890625,
+    "envSight": 182.77867126464844,
+    "gardenArea": 33.11760711669922,
+    "hauseType": 0,
+    "price": 205134,
+    "yearOld": 28.136781692504883,
+    "transportation": 1570.5257568359375
+  },
+  {
+    "area": 116.43367767333984,
+    "noicelevel": 108.85362243652344,
+    "envSight": 80.34507751464844,
+    "gardenArea": 20.765954971313477,
+    "hauseType": 2,
+    "price": 271934,
+    "yearOld": 17.313610076904297,
+    "transportation": 780.3687133789062
+  },
+  {
+    "area": 178.4534149169922,
+    "noicelevel": 99.83210754394531,
+    "envSight": 118.67425537109375,
+    "gardenArea": 14.036625862121582,
+    "hauseType": 4,
+    "price": 491277,
+    "yearOld": 2.6650571823120117,
+    "transportation": 2957.47802734375
+  },
+  {
+    "area": 150.30563354492188,
+    "noicelevel": 104.05206298828125,
+    "envSight": 104.80711364746094,
+    "gardenArea": 14.206737518310547,
+    "hauseType": 0,
+    "price": 250447,
+    "yearOld": 29.759313583374023,
+    "transportation": 451.1796875
+  },
+  {
+    "area": 190.5722198486328,
+    "noicelevel": 88.40677642822266,
+    "envSight": 181.4879150390625,
+    "gardenArea": 32.89889907836914,
+    "hauseType": 4,
+    "price": 337444,
+    "yearOld": 20.280141830444336,
+    "transportation": 2443.60986328125
+  },
+  {
+    "area": 79.7486343383789,
+    "noicelevel": 79.71858215332031,
+    "envSight": 184.5408935546875,
+    "gardenArea": 9.966527938842773,
+    "hauseType": 0,
+    "price": 194462,
+    "yearOld": 24.819473266601562,
+    "transportation": 2978.1005859375
+  },
+  {
+    "area": 84.9906997680664,
+    "noicelevel": 117.60135650634766,
+    "envSight": 75.45231628417969,
+    "gardenArea": 33.635047912597656,
+    "hauseType": 3,
+    "price": 110525,
+    "yearOld": 25.434328079223633,
+    "transportation": 1886.1719970703125
+  },
+  {
+    "area": 191.70765686035156,
+    "noicelevel": 75.55186462402344,
+    "envSight": 161.2196044921875,
+    "gardenArea": 48.642189025878906,
+    "hauseType": 2,
+    "price": 667857,
+    "yearOld": 16.700172424316406,
+    "transportation": 2698.75927734375
+  },
+  {
+    "area": 79.72872924804688,
+    "noicelevel": 67.67737579345703,
+    "envSight": 90.02076721191406,
+    "gardenArea": 38.52290344238281,
+    "hauseType": 2,
+    "price": 533574,
+    "yearOld": 0.6472688913345337,
+    "transportation": 156.31854248046875
+  },
+  {
+    "area": 155.61557006835938,
+    "noicelevel": 112.71275329589844,
+    "envSight": 87.45331573486328,
+    "gardenArea": 39.63253402709961,
+    "hauseType": 3,
+    "price": 230655,
+    "yearOld": 23.01940155029297,
+    "transportation": 508.05419921875
+  },
+  {
+    "area": 74.53777313232422,
+    "noicelevel": 95.80494689941406,
+    "envSight": 139.24929809570312,
+    "gardenArea": 46.106712341308594,
+    "hauseType": 1,
+    "price": 185992,
+    "yearOld": 28.911218643188477,
+    "transportation": 1876.234375
+  },
+  {
+    "area": 163.0447235107422,
+    "noicelevel": 103.34193420410156,
+    "envSight": 77.10738372802734,
+    "gardenArea": 37.126705169677734,
+    "hauseType": 0,
+    "price": 283595,
+    "yearOld": 28.05961799621582,
+    "transportation": 2971.84912109375
+  },
+  {
+    "area": 157.79727172851562,
+    "noicelevel": 75.18365478515625,
+    "envSight": 105.54544830322266,
+    "gardenArea": 45.52399444580078,
+    "hauseType": 0,
+    "price": 672905,
+    "yearOld": 6.817086219787598,
+    "transportation": 1309.4305419921875
+  },
+  {
+    "area": 89.13357543945312,
+    "noicelevel": 84.59513092041016,
+    "envSight": 129.26083374023438,
+    "gardenArea": 24.512666702270508,
+    "hauseType": 2,
+    "price": 359243,
+    "yearOld": 8.98469066619873,
+    "transportation": 1650.388427734375
+  },
+  {
+    "area": 137.97805786132812,
+    "noicelevel": 71.64100646972656,
+    "envSight": 176.93646240234375,
+    "gardenArea": 19.087160110473633,
+    "hauseType": 3,
+    "price": 483443,
+    "yearOld": 9.23556137084961,
+    "transportation": 2733.772216796875
+  },
+  {
+    "area": 190.1114959716797,
+    "noicelevel": 79.6893081665039,
+    "envSight": 80.14195251464844,
+    "gardenArea": 19.208744049072266,
+    "hauseType": 4,
+    "price": 387077,
+    "yearOld": 18.350351333618164,
+    "transportation": 2272.53955078125
+  },
+  {
+    "area": 208.9615478515625,
+    "noicelevel": 94.33853912353516,
+    "envSight": 106.74456787109375,
+    "gardenArea": 20.37200355529785,
+    "hauseType": 1,
+    "price": 675813,
+    "yearOld": 18.29714012145996,
+    "transportation": 1593.7974853515625
+  }
+]

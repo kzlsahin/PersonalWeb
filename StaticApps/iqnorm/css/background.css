@@ -1,0 +1,102 @@
+body {
+    width: 80%;
+    background-image: url('main.kzlsahin.site/images/pero-kalimero-9BJRGlqoIUk-unsplash.jpg');
+    background-color: white;
+    margin: auto;
+    color: darkred;
+    font-size: 18px;
+}
+
+    
+
+#kzlSahin {
+    width: 30%;
+    float: left;
+    margin-top: 3%;
+}
+
+#kzlSahin img {
+    width:100%;
+}
+
+.headTitle{
+    float:right;
+    width: 70%;
+    text-align: center;
+    color: darkred;
+}
+
+section, hr {
+    float:left;
+    width:100%;
+}
+
+.sharedItems {
+    border-style: none;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+    width: 100%;
+    background-image: url('main.kzlsahin.site/images/pero-kalimero-9BJRGlqoIUk-unsplash.jpg');
+    background-color: white;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: darkred;
+    font-size: 3vw;
+    }
+   .headTitle{
+    float:right;
+    width: 100%;
+    text-align: center;
+    color: darkred;
+    }
+    #kzlSahin {
+    width: 100%;
+    float: left;
+    margin-top: 3%;
+    }
+    .topicArticle article {
+    border-left: 6px solid brown;
+    background-color:beige;
+    color: darkred;
+    margin-top: 3%;
+    padding-left: 2%;
+    font-size: 2.5vw;
+    padding-bottom: 2%;
+}
+    .topicArticle article a {
+    text-decoration: none;
+    color: inherit;
+    }
+}
+
+h1 {
+    font-size: 6vW;
+    }
+h4 {
+    font-size: 20px;
+}
+
+.sharedItems {
+    float:left;
+    width:100%;
+}
+.topicArticle article {
+    border-left: 6px solid brown;
+    background-color:white;
+    border-radius: 15px;
+    color: darkred;
+    margin-top: 1%;
+    padding-left: 2%;
+    font-size: 15px;
+    padding-bottom: 1%;
+    cursor: pointer;
+}
+.topicArticle article a {
+    text-decoration: none;
+    color: inherit;
+}
+.topicArticle article:hover {
+    background-color: floralwhite;
+}

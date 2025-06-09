@@ -1,0 +1,95 @@
+header {
+    color: darkred;
+    margin:1%;
+    text-align:center;
+}
+
+html {
+    background-color:antiquewhite;
+}
+body {
+    padding: 1%;
+    color:darkred;
+    
+}
+
+p {
+    margin: 4px;
+    font-size: 2vw;
+}
+
+.label {
+    margin-top:10px;
+}
+
+#inputDiv {
+    border: 2px solid darkred;
+    border-radius: 4px;
+}
+
+#outputDiv {
+    padding: 3px;
+    margin-top: 2px;
+    width:100%;
+    border-radius: 5px;
+    grid-column: auto;
+    
+    
+}
+
+button [
+    color:darkred;
+]
+
+.buttonIn {
+    width: 100%;
+    margin-top: 2px;
+}
+
+input.num {
+    position : absolute;
+    right : 10%;
+    width: 5%;
+    margin-top: 2px;
+    text-align: center;
+}
+
+th {
+    border: 1px solid black;
+}
+
+#formatList {
+    float:left;
+    padding: 2px;
+    margin: 4px;
+    border: 1px solid black;
+    color: darkred;
+}
+
+
+#detailTable {
+    position: relative;
+    margin: 4px;
+    padding: 2px;
+}
+
+#resultTables{
+    width: 100%;
+    align-content: center;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 30%;
+  top: 20%;
+  width: 40%; /* Full width */
+  height: 10%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: white;
+  text-align: center;
+  padding-top: 2px;
+}
+
