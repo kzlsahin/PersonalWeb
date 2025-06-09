@@ -1,0 +1,135 @@
+:root {
+    --main-bg-color: rgb(255, 255, 255);
+    --text-color: rgb(7, 6, 1);
+}
+
+html {
+    height: 100vh;
+    padding: 0px;
+    background-color: var(--main-bg-color);
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+    html:fullscreen {
+        background-color: var(--main-bg-color);
+    }
+
+body {
+    padding: 1rem;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    width: 100%;
+    min-width: 60ch;
+    margin: 0;
+    overflow-y: scroll overflow-x: hidden;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+    overscroll-behavior-y: contain;
+    font-size: 14pt;
+    font-family: 'Times New Roman', Times, serif;
+    counter-reset: pageNUmber;
+}
+.app-banner {
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    border-bottom : solid 1px black;
+}
+.banner-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+input[type="date" i]{
+    border : 0;
+    width: 100%;
+    cursor: pointer;
+    background-color : transparent;
+}
+
+input[type="text" i] {
+    border: 0;
+    cursor: text;
+    background-color: transparent;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.bold {
+    font-weight: 600;
+}
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+select {
+    background-color : transparent;
+}
+
+dialog {
+    width : 70%;
+    margin: auto;
+    font-size: 16pt;
+    font-family:'Segoe UI';
+}
+
+.dialog-form > button {
+    font-size: 16pt;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 0.5em;
+}
+@media only screen and (max-width: 850px) {
+}
+
+@media all and (display-mode: standalone) {
+}
+
+@media print {
+    html {
+        padding: 0;
+        width: 210mm;
+        height: 297mm;
+    }
+    body {
+        width: 210mm;
+        height: 297mm;
+        padding:0;
+        background-image: url(../images/UAB-antet.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-size: 10pt;
+    }
+}
+
+@page {
+    size: A4;
+    margin-left: 1in;
+    margin-Top: 1in;
+    margin-right: 0.5in;
+    margin-bottom: 0.5in;
+
+    @top-right-corner {
+        content: counter(pageNumber);
+        counter-increment: pageNumber;
+    }
+}

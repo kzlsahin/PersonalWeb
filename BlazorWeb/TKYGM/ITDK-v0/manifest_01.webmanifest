@@ -1,0 +1,19 @@
+{
+  "short_name": "ITDK Formu",
+  "name": "TKYGM ITDK Denetim Formu Uygulaması",
+  "icons": [
+    {
+      "src": "https://kzlsahin.online/TKYGM/ITDK-v1/images/UAB_Logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+
+  "id": "https://kzlsahin.online/TKYGM/ITDK-v1/",
+  "start_url": "https://kzlsahin.online/TKYGM/ITDK-v1/",
+  "background_color": "#2148C0",
+  "display": "standalone",
+  "scope": "https://kzlsahin.online/TKYGM/ITDK-v1/",
+  "theme_color": "#2148C0",
+  "description": "TKYGM tarafından ITDK denetimlerinin verimliliğini artırmak amacıyla geliştirilmiş bir uygulamadır."
+}

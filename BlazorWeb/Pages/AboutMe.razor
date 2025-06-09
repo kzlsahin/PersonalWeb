@@ -1,0 +1,114 @@
+﻿@page "/about"
+@inject IJSRuntime JS
+<PageTitle>Home</PageTitle>
+
+<div class="head-scene">
+    <div id="profile">
+        <img alt="kızıl şahin fotoğrafı" src="./assets/github-profile.jpeg" style="max-width:100%" />
+    </div>
+    <div class="head-title">
+
+
+        <div class="personal-details">
+            <div id="en" class="lang-dependant">
+                a dreamer under engineering discipline
+                <br />
+                Welcome to my humble world!
+            </div>
+            <div id="tr" class="lang-dependant">
+                Merhaba! Ben Mustafa,
+                <br />
+                mühendislik disiplini altında bir hayalperestim
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<p>
+    <span id="en" class="lang-dependant">
+        Hi again! I am Mustafa. I was born in Istanbul 1988.
+        Now I am father of a son and husband of a beauty.
+    </span>
+    <span id="tr" class="lang-dependant">
+        Yeniden merhaba! Ben Mustafa. 1988 İstanbul doğumluyum. Şimdi bir çocuk babası ve bir güzelliğin eşiyim.
+    </span>
+</p>
+
+<p>
+    <span id="en" class="lang-dependant">
+        I have always been curious.
+        I guess the best thing I do was learning.
+        When I was at primary school I was co-founder of a student group of science
+        where learning and sharing the knowledge about the universe,
+        environment, biology and even physics. In the same era, I have met with the marine vessels, from ancient sailing vessels to modern naval crafts.
+        That was the big mystery which would take my attention though my whole life.
+        <br /><br />
+        And now...
+        <br /><br />
+        I am naval architect and marine engineer with broad experience in design of marine vessels, seasoned with administrative culture and computational science.
+        <br /><br />
+        As an experienced design engineer with my background at the Maritime Administration,
+        I was also delegated at International Maritime Organization (IMO) as an advisor member of Turkish Delegation.
+        <br /><br />
+        I have always been the person who has initiative to develop solutions and offer innovative approaches to problems.
+        Besides my regular jobs, I have always taken responsibility to improve the business processes and intelligence.
+        <br /><br />
+        I have improved my programming skills in line with my marriage and parenthood journey for last 4 years.
+        During this period I also attended Computational Science and Engineering MSc program and now I am developing a new approach for stochastic dynamic systems like epidemic models.
+        <br /><br />
+        I have strong analytical thinking and problem solving skills including excellent written and verbal communication skills.
+        I believe that the power is in our dreams, which enables us to percept and recreate the world around us.
+    </span>
+    <span id="tr" class="lang-dependant">
+
+        Her zaman meraklı olmuşumdur. Sanırım en iyi yaptığım şey öğrenmekti.
+        İlkokul yıllarımda bir öğrenci bilim grubunun (Bilim Grubu) kurucu ortağıydım.
+        Evren, çevre, biyoloji ve hatta fizik gibi alanlarda bilgiler öğreniyor
+        ve bunları paylaşıyorduk. Aynı dönemde, gemilerle tanıştım;
+        antik yelkenli gemilerden modern deniz araçlarına kadar. Benim için bu alan,
+        gelecekteki tüm hayatım boyunca ilgimi çekecek büyük bir gizemdi.
+        <br /><br />
+        Ve şimdi...
+        <br /><br />
+        Dizayn konusunda deneyimli, İdrai kültür ve Bilgisayar bilimlerinde kendisini geliştirmiş bir Gemi İnşaatı ve Gemi Makineleri Mühendisiyim.
+        <br /><br />
+        Denizcilik İdaresi'ndeki geçmişimle deneyimli bir tasarım mühendisi olarak, Uluslararası Denizcilik Örgütü'nde (IMO) Türk Delegasyonu danışman üyesi olarak görev aldım.
+        <br /><br />
+        Her zaman, sorunlar karşısında, yenilikçi yaklaşımlar ve çözümler geliştirme konusunda inisiyatif alan biri oldum.
+        Normal iş tanımım dışında, gönüllü olarak, iş akış süreçlerimizi ve verimliliğimizi geliştirmek üzere sorumluluk yüklendim.
+        <br /><br />
+        Son 4 yıldır evlilik ve ebeveynlik serüvenime paralel olarak programlama becerilerimi geliştirdim.
+        Bu süre zarfında Hesaplamalı Bilim ve Mühendislik Yüksek Lisans programına da katıldım ve şu anda epidemik modeller gibi
+        stokastik dinamik sistemler için yeni bir yaklaşım geliştiriyorum.
+        <br /><br />
+        İyi düzeyde yazılı ve sözlü iletişim becerileri de dahil olmak üzere güçlü analitik düşünme ve problem çözme becerilerine sahibim.
+        Çevremizdeki dünyayı algılamamızı ve yeniden şekillendirmemizi sağlayan gücün hayallerimizde yattığına inanıyorum.
+    </span>
+</p>
+
+<p>
+    <span id="en" class="lang-dependant">
+    </span>
+    <span id="tr" class="lang-dependant">
+
+    </span>
+</p>
+
+<NavLink class="resume-download"  href="resume">
+    <span id="en" class="lang-dependant">
+        See my resume
+    </span>
+    <span id="tr" class="lang-dependant">
+        Öz geçmişimi görün
+    </span>
+</NavLink>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender) return;
+        await Task.Delay(200);
+        await JS.InvokeVoidAsync("checkLang"); // Calls the JS function
+    }
+}

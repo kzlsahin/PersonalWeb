@@ -1,0 +1,45 @@
+﻿@page "/contact"
+@inject IJSRuntime JS
+<PageTitle>Cotact</PageTitle>
+
+<div class="head-scene">
+    <div id="profile">
+        <img alt="kızıl şahin fotoğrafı" src="/images/github-profile.jpeg" style="max-width:100%" />
+    </div>
+    <div class="head-title">
+
+
+        <div class="personal-details">
+            <div id="en" class="lang-dependant">
+                a dreamer under engineering discipline
+                <br />
+                Welcome to my humble world!
+            </div>
+            <div id="tr" class="lang-dependant">
+                Merhaba! Ben Mustafa,
+                <br />
+                mühendislik disiplini altında bir hayalperestim
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<p>
+    senturkmus@gmail.com
+</p>
+<p>
+    https://www.linkedin.com/in/mustafa-senturk-ub9901
+</p>
+<p>
+    https://github.com/kzlsahin
+</p>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender) return;
+        await Task.Delay(200);
+        await JS.InvokeVoidAsync("checkLang"); // Calls the JS function
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html land="tr">
+    <head>
+        <script src="html5-qrcode.min.js"></script>
+        </head>
+    <style>
+        
+        button {
+            font-size: 30px;
+        }
+    </style>
+    <body>
+    <body>
+        <div id="reader"></div>
+        <button onclick="stopScane()">Stop Scanning</button>
+        <button onclick="changeCamera()">change camera</button>
+        <script>
+            let cameraId;
+            let deviceList;
+            let cameraIndex;
+            
+             const html5QrCode = new Html5Qrcode("reader");
+            // This method will trigger user permissions
+            Html5Qrcode.getCameras().then(devices => {
+            /**
+            * devices would be an array of objects of type:
+            * { id: "id", label: "label" }
+            */
+            if (devices && devices.length) {
+                cameraIndex = 0;
+                deviceList = devices
+                cameraId = devices[cameraIndex].id;
+                console.log(cameraId);
+                startScan();
+            // .. use this to start scanning.
+            }
+                }).catch(err => {
+                console.log(err);
+            // handle err
+                });
+            // Create instance of the object. The only argument is the "id" of HTML element created above.
+           
+            function startScan(){
+            html5QrCode.start(
+              cameraId,     // retreived in the previous step.
+              {
+                fps: 30,    // sets the framerate to 10 frame per second
+                qrbox: 500  // sets only 250 X 250 region of viewfinder to
+                            // scannable, rest shaded.
+              },
+              qrCodeMessage => {
+                // do something when code is read. For example:
+                console.log(`QR Code detected: ${qrCodeMessage}`);
+              },
+              errorMessage => {
+                // parse error, ideally ignore it. For example:
+                console.log(`QR Code is not in front of camera.`);
+              })
+            .catch(err => {
+              // Start failed, handle it. For example,
+              console.log(`Unable to start scanning, error: ${err}`);
+            });
+                }
+            
+            
+            function stopScane(){
+                
+                html5QrCode.stop().then(ignore => {
+                  // QR Code scanning is stopped.
+                  console.log("QR Code scanning stopped.");
+                }).catch(err => {
+                  // Stop failed, handle it.
+                  console.log("Unable to stop scanning.");
+                });
+            }
+            
+           function changeCamera(){
+               stopScane();
+               if(deviceList.length > 1){
+                   cameraIndex = (cameraIndex +1) % deviceList.length;
+                   cameraId = deviceList[cameraIndex].id;
+                   
+               }
+               
+                startScan();
+            }
+        </script>
+    
+    </body>
+<html>

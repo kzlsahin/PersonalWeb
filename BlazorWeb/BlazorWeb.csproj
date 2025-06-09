@@ -7,6 +7,49 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\EmaHarita-V3\**" />
+    <Compile Remove="wwwroot\Fourier\**" />
+    <Compile Remove="wwwroot\hw-math622-stringDeflection\**" />
+    <Compile Remove="wwwroot\incApp-v1.6\**" />
+    <Compile Remove="wwwroot\inclining-experiment\**" />
+    <Compile Remove="wwwroot\iqnorm\**" />
+    <Compile Remove="wwwroot\LinearRegression\**" />
+    <Compile Remove="wwwroot\Luxolis\**" />
+    <Compile Remove="wwwroot\motorlar\**" />
+    <Compile Remove="wwwroot\NeuralNetwork\**" />
+    <Content Remove="wwwroot\EmaHarita-V3\**" />
+    <Content Remove="wwwroot\Fourier\**" />
+    <Content Remove="wwwroot\hw-math622-stringDeflection\**" />
+    <Content Remove="wwwroot\incApp-v1.6\**" />
+    <Content Remove="wwwroot\inclining-experiment\**" />
+    <Content Remove="wwwroot\iqnorm\**" />
+    <Content Remove="wwwroot\LinearRegression\**" />
+    <Content Remove="wwwroot\Luxolis\**" />
+    <Content Remove="wwwroot\motorlar\**" />
+    <Content Remove="wwwroot\NeuralNetwork\**" />
+    <EmbeddedResource Remove="wwwroot\EmaHarita-V3\**" />
+    <EmbeddedResource Remove="wwwroot\Fourier\**" />
+    <EmbeddedResource Remove="wwwroot\hw-math622-stringDeflection\**" />
+    <EmbeddedResource Remove="wwwroot\incApp-v1.6\**" />
+    <EmbeddedResource Remove="wwwroot\inclining-experiment\**" />
+    <EmbeddedResource Remove="wwwroot\iqnorm\**" />
+    <EmbeddedResource Remove="wwwroot\LinearRegression\**" />
+    <EmbeddedResource Remove="wwwroot\Luxolis\**" />
+    <EmbeddedResource Remove="wwwroot\motorlar\**" />
+    <EmbeddedResource Remove="wwwroot\NeuralNetwork\**" />
+    <None Remove="wwwroot\EmaHarita-V3\**" />
+    <None Remove="wwwroot\Fourier\**" />
+    <None Remove="wwwroot\hw-math622-stringDeflection\**" />
+    <None Remove="wwwroot\incApp-v1.6\**" />
+    <None Remove="wwwroot\inclining-experiment\**" />
+    <None Remove="wwwroot\iqnorm\**" />
+    <None Remove="wwwroot\LinearRegression\**" />
+    <None Remove="wwwroot\Luxolis\**" />
+    <None Remove="wwwroot\motorlar\**" />
+    <None Remove="wwwroot\NeuralNetwork\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.14" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.14" PrivateAssets="all" />
   </ItemGroup>

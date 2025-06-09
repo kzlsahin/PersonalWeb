@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>Pendulum Application</title>
+    <meta name="author" content="Mustafa ŞENTÜRK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1905050">
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <script src="js/chart.js"></script>
+    <script src="js/dataHandler.v.1.9.js"></script>
+
+
+</head>
+
+<body>
+    <button id="btn-start-stop" onclick="start()">Start</button>
+    <button id="btn-notification-perm" onclick="checkNotificationPerm()">Bildirimlere izin ver</button>
+    <text id="notificationText"></text>
+    <canvas id="pendulumCanvas" width="350" height="250" style="border:1px solid black;"></canvas>
+
+    <script>
+        const permissionState = {
+            notification: '',
+            accelerometer: '',
+        };
+
+        const sensorData = { x: [], y: [], z: [] };
+        const sensorLastRecord = { x: 0, y: 0, z: 9.8 };
+
+        let recorderInterval;
+        let btnStartStop = document.getElementById("btn-start-stop");
+        let acl = new GravitySensor({frequency: 10});
+
+        const checkNotificationPerm = () => {
+
+            if (!('Notification' in window)) {
+                console.log("Bu tarayıcıda bildirimler çalışmıyor");
+                document.getElementById('btn-notification-perm').style.display = 'none';
+                documen.getElementById("notificationText").innerText = "Bu tarayıcıda bildirimler çalışmıyor";
+                return;
+            }
+
+            if (permissionState.notification != 'granted') {
+                Notification.requestPermission().then((stat) => { permissionState.notification = stat; });
+            }
+
+            if (permissionState.notification === 'granted') {
+                document.getElementById('btn-notification-perm').style.display = 'none';
+            } else {
+                document.getElementById('btn-notification-perm').style.display = 'inline-block';
+            }
+        };
+
+        const start = () => {
+            console.log('started');
+            navigator.permissions.query({ name: 'accelerometer' }).then((res) => permissionState.accelerometer = res.state);
+
+            if (permissionState.accelerometer != 'granted') {
+
+            }
+
+            //window.addEventListener("devicemotion", handleMotionEvent, true);
+
+            acl.addEventListener('reading', handleMotionEvent);
+            acl.start();
+
+            clearInterval(recorderInterval);
+            //recorderInterval = setInterval(recordSensorState, 250);
+
+            btnStartStop.removeEventListener("click", start);
+            setTimeout(btnStartStop.addEventListener('click', stop), 150);
+        };
+
+        const stop = () => {
+            console.log('stoped');
+            //window.removeEventListener("devicemotion", handleMotionEvent);
+
+            //clearInterval(recorderInterval);
+
+            btnStartStop.removeEventListener("click", stop);
+            setTimeout(btnStartStop.addEventListener('click', start), 150);
+        }
+
+        window.addEventListener('load', checkNotificationPerm);
+
+
+
+        const handleMotionEvent = (event) => {
+
+            sensorLastRecord.x = acl.x;
+            sensorLastRecord.y = acl.y;
+            sensorLastRecord.z = acl.z;
+
+            /*
+            sensorLastRecord.x = event.accelerationIncludingGravity.x;
+            sensorLastRecord.y = event.accelerationIncludingGravity.y;
+            sensorLastRecord.z = event.accelerationIncludingGravity.z;
+            */
+            drawCanvas();
+            // Do something awesome.
+        }
+
+        const recordSensorState = () => {
+            sensorData.x.push(sensorLastRecord.x);
+            sensorData.y.push(sensorLastRecord.y);
+            sensorData.z.push(sensorLastRecord.z);
+        }
+
+        const drawCanvas = () => {
+            let c = document.getElementById("pendulumCanvas");
+            let ctx = c.getContext("2d");
+            let centerX =150;
+            let centerY = 125;
+            ctx.fillStyle = "#448899";
+            ctx.fillRect(0,0,350,250);
+            ctx.moveTo(0, 125);
+            ctx.lineTo(350, 125);
+            ctx.strokeStyle = "#AAAAAA";
+            ctx.stroke();
+            for(let i = 0; i < 7; i++){
+                let x = i * 50;
+                ctx.moveTo(x, 110);
+                ctx.lineTo(x, 140);
+                ctx.stroke();
+            }
+            for(let i = 0; i < 35; i++){
+                if(i % 5 == 0) continue;
+                let x = i * 10;
+                ctx.moveTo(x, 120);
+                ctx.lineTo(x, 130);
+                ctx.stroke();
+            }
+            ctx.fillStyle = "#FFCC00";
+            let tan = sensorLastRecord.x / sensorLastRecord.z;
+            ctx.fillRect((tan * 2000.0) + centerX - 4, centerY - 4, 8, 8);
+
+        }
+
+        drawCanvas();
+    </script>
+</body>
+
+</html>

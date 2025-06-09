@@ -9,6 +9,10 @@
     border-bottom: 2px solid darkred;
 }
 
+.lang-dependant {
+    display: none;
+}
+
 #kzlSahin {
     width: 40%;
     max-width: 30em;
