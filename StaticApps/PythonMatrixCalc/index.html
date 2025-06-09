@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <link rel="stylesheet" href="/css/background.css">
+    <meta name="description" content="Python ile Matris Hesapları"><meta name="keywords" content="educational, scripting, boat building, draft"><meta name="author" content="Mustafa Şentürk"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    
+    <body>
+        
+        <label for="lang">Select a language</label>
+    <select id="lang-selector" name="lang" onchange="changeLang()">
+        <option selected value="lang-en">EN</option>
+        <option value="lang-tr">TR</option>
+    </select>
+    
+    <div id="lang-en" class="lang-dependant">
+        <article class="topicArticle">
+            <h2>Python ile Matris Hesapları</h2>
+            <p>
+            It was impossible not to delve into matrix calculations while researching 2d and 3d transformations while I was studying visual applications with Java. While researching the subject, I prepared a small library as a result of wanting to put it into practice. You can perform basic matrix operations using this python module.</p>
+            <p>İn thisdomain <a href="https://matrix.reshish.com">matrix.reshish.com</a> well done site. It has a useful interface and you can perform matrix operations. I used this page while testing this module. </p>
+            
+            <p>Download: <a href="pythonMatrixWork.py">pythonMatrixWork.py</a> </p>
+        </article>
+    </div>
+    
+    <div id="lang-tr" class="lang-dependant" style="none">
+        <article class="topicArticle">
+            <h2>Python ile Matris Hesapları</h2>
+            <p>
+            Java ile görsel uygulamalar yaptığım sıralar 2d ve 3d transformasyonlarını araştırırken matris hesaplarına dalmamak mümkün değildir. Konuyu araştırırken bir yandan da uygulamaya dökmek istemem neticesinde ufak bir kütüphanecik hazırladım. Temel matris işlemlerini bu python modülü kullanarak gerçekleştirebilirsiniz.</p>
+            <p>Bu alanda <a href="https://matrix.reshish.com">matrix.reshish.com</a> iyi hazırlanmış bir site. Kullanışlı bir arayüze sahip olup matris işlemleri gerçekleştirebilirsiniz. Bu modülü test ederken bu sayfadan faydalandım. </p>
+            
+            <p>Python matris modülünü burdan indirebilirsiniz: <a href="pythonMatrixWork.py">pythonMatrixWork.py</a> </p>
+        </article>
+    </div>
+    
+    <script>
+        
+        function changeLang() {
+            let lang = event.target.value;
+            console.log(lang);
+            let divs = document.getElementsByClassName("lang-dependant");
+            
+            for(div of divs){
+                
+               div.style.display = div.id == lang ? "block" : "none";
+            }
+            
+        }
+    </script>
+    </body>

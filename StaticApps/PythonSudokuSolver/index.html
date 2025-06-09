@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head><meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <link rel="stylesheet" href="/css/background.css">
+</head>
+
+<body>
+    <label for="lang">Select a language</label>
+    <select id="lang-selector" name="lang" onchange="changeLang()">
+        <option selected value="lang-en">EN</option>
+        <option value="lang-tr">TR</option>
+    </select>
+    <div id="lang-en" class="lang-dependant">
+    <h4>Algortihm That Solves SUDOKU</h4>
+    <article>
+        <p>
+        During my military service, there wasn't much for me to linger on other than the book. There was plenty of time to think. When I couldn't read a book, the only game I could play on the keypad phone was Sudoku. After a while, when I realized that my mind was using certain algorithms while solving sudoku, I decided to put it into software. After shaping it well in my head, I prepared this python sketch the day after I got back from the military.
+There was one missing method in this sketch. For this reason, some of the difficult SUDOKUs may not be solved. I didn't continue as I did not need to spend time further and I learned that there are already existing sudoku solver applications that do this job. However, in this state, it can solve most of sudoku puzzles. It may be interesting to the curious. Maybe finding and completing the missing can be a new puzzle.
+        </p>
+        <p>
+        written in Python 3.6 version
+        </p>
+        <p>Dpwnload: <a href="./pythonSudoku.py">pythonSudoku.py</a></p>
+        
+    </article>
+    
+    </div>
+    <div id="lang-tr" class="lang-dependant" style="display:none">
+    <h4>Sudoku Çözen Algoritma</h4>
+    <article>
+        <p>
+        Askerlik süresince kitap dışında oyalanabileceğim fazla bir şey yoktu. Düşünecek çokça vakit vardı. Kitap okuyamadığım zamanlarda elimin altındaki tuşlu telefonda oynayabileceğim tek oyun Sudoku idi. Bir süre sonra sudoku çözerken zihnimin belli başlı algoritmalar kullandığını farkedince bunu yazılıma dökmeye karar verdim. Kafamda iyice şekillendirdikten sonra askerden döndüğüm günün ertesinde bu python skeçi hazırladım.<br />Bu skeçte eksik bir metot kalmıştı. Bu nedenle bazı zor sudokuların çözümünü bulamayabiliyor. Daha fazla vakit ayırmaya gerek görmediğimden ve zaten bu işi yapan mevcut sudokü çözücü uygulamalar olduğunu öğrendiğimden devam ettirmedim. Ancak bu haliyle de çoğu sudokuyu çözebilir halde. Meraklısına ilginç gelebilir. Belki eksiği bulup tamamlamak yeni bir bulmaca olabilir
+        </p>
+        <p>
+        Python 3.6 versiyonu kullanılarak yazılmıştır.
+        </p>
+        <p>indirmek için: <a href="./pythonSudoku.py">pythonSudoku.py</a></p>
+        
+    </article>
+    
+    </div>
+    
+    <script>
+        
+        function changeLang() {
+            let lang = event.target.value;
+            console.log(lang);
+            let divs = document.getElementsByClassName("lang-dependant");
+            
+            for(div of divs){
+                
+               div.style.display = div.id == lang ? "block" : "none";
+            }
+            
+        }
+    </script>
+    </body>
