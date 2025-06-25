@@ -13,6 +13,9 @@
     display: none;
 }
 
+.writing-column{
+    max-width:50em;
+}
 #kzlSahin {
     width: 40%;
     max-width: 30em;

@@ -1,0 +1,720 @@
+﻿@page "/personalprojects"
+@inject HttpClient Http
+@inject IJSRuntime JS
+<PageTitle>PErsonal Projects</PageTitle>
+
+<div class="head-scene">
+	<div id="kzlSahin">
+		<img alt="kızıl şahin fotoğrafı" src="./assets/kizilsahin.jpeg" style="max-width:100%" />
+	</div>
+
+	<div class="head-title">
+
+		<details class="hand-written" style="text-align: center; font-style:italic; cursor:pointer;" open>
+			<summary style="list-style:none">
+				<br />Your dreams are your wind,<br />
+				Blowing your sails through the life,<br />
+				Open your wings and fly,<br />
+				Up into the sky...<br /><br />
+			</summary>
+			<p>
+				To See how wide the horizon is,<br />
+				Look around you and open your mind,<br />
+				In your dreams, you see, the power is,<br />
+				Not in your muscles or in your veins...
+			</p>
+		</details>
+		&#8212M.Senturk
+	</div>
+
+</div>
+
+
+<div class="sharedItems">
+	<h2>
+		<span id="en" class="lang-dependant">C# Projects</span>
+		<span id="tr" class="lang-dependant">C# Çalışmalarım</span>
+	</h2>
+	<article class="topicArticle">
+		<article onclick="location.href='https://tracker.bsite.net'">
+			<h3>
+				<span id="en" class="lang-dependant">Tracker - Web Application</span>
+				<span id="tr" class="lang-dependant">Tracker - Web Uygulaması</span>
+			</h3>
+			<img src="./images/TrackerBsite.png" alt="Uygulama Ekran Görüntüsü">
+			<p>
+				<a rel="nofollow" href="https://tracker.bsite.net" target="_blank">
+					<span id="en" class="lang-dependant">
+						A simple but useful application to keep track of the expiry dates of your documents such as insurance certificates.
+						Application sends notification emails to inform you when an expiry date is close.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Sigorta sertifikaları gibi belgelerinizin son kullanma tarihlerini takip etmek için basit ama kullanışlı bir uygulama.
+
+						Uygulama, bir son kullanma tarihi yaklaştığında sizi bilgilendirmek için bildirim e-postaları gönderir.
+					</span>
+					<i>https://tracker.bsite.net</i>
+				</a>
+			</p>
+		</article>
+		<article onclick="location.href='https://github.com/kzlsahin/Workbench/tree/master/FileEncrypter'">
+			<h3>
+				<span id="en" class="lang-dependant">File Encrypter</span>
+				<span id="tr" class="lang-dependant">Dosya Sifreleme</span>
+			</h3>
+			<img src="./images/FileEncrypterDesktop.png" alt="Uygulama Ekran Görüntüsü">
+			<p>
+				<a rel="nofollow" href="https://github.com/kzlsahin/Workbench/tree/master/FileEncrypter target="_blank">
+					<span id="en" class="lang-dependant">
+						A file encrypter for encrypting sensitive files to be able to store them in a drive.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Hassas dosyalarin sifrelenerek drive'da tutulabilmesi icin bir sifreleyici.
+					</span>
+					<i>https://github.com/kzlsahin/Workbench/...</i>
+				</a>
+			</p>
+		</article>
+		<article onclick="location.href='https://github.com/kzlsahin/SiUnitsArithmetic'">
+			<h3>
+				<span id="en" class="lang-dependant">SIUnitsArtihmetic - NuGet package</span>
+				<span id="tr" class="lang-dependant">SIUnitsArtihmetic - NuGet paketi</span>
+			</h3>
+			<img src="./images/Sail_sq.png" alt="Uygulama Ekran Görüntüsü">
+			<p>
+				<a rel="nofollow" href="https://www.nuget.org/packages/SIUnitsArithmetic#versions-body-tab" target="_blank">
+					<span id="en" class="lang-dependant">
+						SIUnitsArithmetic defines metric system units and provides related
+						arithmetic operations including unit to unit multiplication even with compound units of any combination
+						of basic units, resulting in higher or lower order units (m², 1/m or m/s).
+					</span>
+					<span id="tr" class="lang-dependant">
+						SIUnitsArithmetic metrik sistem birimlerini tanımlar. Temel birimlerin
+						herhangi bir kombinasyonundan oluşan bileşik birimlerle bile, birimden birime çarpma dahil olmak üzere,
+						ilgili aritmetik işlemlerin yapılabilmesini sağlar.
+					</span>
+					<i>https://www.nuget.org/packages/SIUnitsArithmetic#versions-body-tab</i>
+				</a>
+			</p>
+		</article>
+		<article onclick="location.href='http://www.mesh.com.tr/index-en.html'">
+			<h3>
+				<span id="en" class="lang-dependant">Ship Structure - Rhino Plugin</span>
+				<span id="tr" class="lang-dependant">Ship Structure - Rhino Plugin</span>
+			</h3>
+			<img src="./images/MesherRhino.jpeg" alt="Uygulama Ekran Görüntüsü">
+			<p>
+				<a rel="nofollow" href="http://www.mesh.com.tr/index-en.html" target="_blank">
+					<span id="en" class="lang-dependant">
+						Rhinoceros plugin for structural modelling and generating meshes.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Yapısal modelleme ve kafes yapısı oluşturmak için Rhinoceros eklentisi.
+					</span>
+					<i>http://www.mesh.com.tr/index-en.html</i>
+				</a>
+			</p>
+		</article>
+		<article onclick="location.href='https://github.com/kzlsahin/AsyncCoffeShopSimulation'">
+			<h3>
+				<span id="en" class="lang-dependant">Asynchronous Coffee Shop Simulation</span>
+				<span id="tr" class="lang-dependant">Asenkron Kahve Dükkanı Simülasyonu</span>
+			</h3>
+			<img src="./images/CoffeeShop.png" alt="Uygulama Ekran Görüntüsü">
+			<p>
+				<a rel="nofollow" href="https://github.com/kzlsahin/AsyncCoffeShopSimulation" target="_blank">
+					<span id="en" class="lang-dependant">
+						With workers handling customers and randomly spawning customers.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Gelen müşteriyi karşılayan çalışanlar ve rastgele ortaya çıkan müşteriler.
+					</span>
+					<i>https://github.com/kzlsahin/AsyncCoffeShopSimulation</i>
+				</a><a src="https://www.youtube.com/watch?v=DBuh8PU3SPY" alt="youtube demo">
+					<i>Youtube Demo</i>
+				</a>
+			</p>
+		</article>
+
+		<article onclick="location.href='https://github.com/kzlsahin/CalculatorApp'">
+			<h3>
+				<span id="en" class="lang-dependant">Calculator Application With a Custom Arithmetic Evaluator</span>
+				<span id="tr" class="lang-dependant">Hesap Makinesi Uygulaması</span>
+			</h3>
+			<img src="./images/CalculatorApp.png" alt="Uygulama Ekran Görüntüsü">
+			<p>
+				<a rel="nofollow" href="https://github.com/kzlsahin/CalculatorApp" target="_blank">
+					<span id="en" class="lang-dependant">
+					</span>
+					<span id="tr" class="lang-dependant">
+					</span>
+					<i>https://github.com/kzlsahin/CalculatorApp</i>
+				</a>
+			</p>
+		</article>
+
+		<article onclick="location.href='https://github.com/kzlsahin/MstfRhinoPlugin'">
+			<h3>
+				<span id="en" class="lang-dependant">Rhinoceros Plugin</span>
+				<span id="tr" class="lang-dependant">Rhinoceros Eklentisi</span>
+			</h3>
+			<img src="./images/Sail_sq.png" alt="Uygulama Ekran Görüntüsü">
+			<p>
+				<a rel="nofollow" href="https://github.com/kzlsahin/MstfRhinoPlugin" target="_blank">
+					<span id="en" class="lang-dependant">
+						I developed a Rhinoceros (3d modelling software) plugin using C# language for my office in order to improve their efficiency.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Dizayn ofis işlerimizin verimliliğini artırmak üzere geliştirdiğim Rhinoceros Eklentisi
+					</span>
+					<i>https://github.com/kzlsahin/MstfRhinoPlugin</i>
+				</a>
+			</p>
+		</article>
+
+	</article>
+
+	<h2>
+		<span id="en" class="lang-dependant">Java Sketches</span>
+		<span id="tr" class="lang-dependant">Java Çalışmalarım</span>
+	</h2>
+	<article class="topicArticle">
+
+		<article onclick="location.href='https://github.com/kzlsahin/Buoy_Simulation'">
+			<h3>
+				<span id="en" class="lang-dependant">Simple Animation of Pantoons in 2D</span>
+				<span id="tr" class="lang-dependant">2B Yüzer Duba Animasyon</span>
+			</h3>
+			<img src="./images/BuoyancySimulation_Screen.png" alt="skeç ekran görüntüsü">
+			<p>
+				<a rel="nofollow" href="https://github.com/kzlsahin/Buoy_Simulation" target="_blank">
+					<span id="en" class="lang-dependant">
+						In this application, which I prepared with Processing 3, there are two
+						pontoons oscillating freely on the water. Water can be fluctuated by pressing the button.
+						The wavelength and amplitude can be changed or the wave
+						can be turned off. The mass inertia of the water around the pontoon has been neglected,
+						frictional resistance is kept very low.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Processing 3 ile uhazırladığım bu uygulamada iki adet
+						dubanın suyun üzerinde serbest salınım yaptığı görülmektedir. Butona basılarak su
+						dalgalandırılabilir. Dalga boyu ve genliği değiştirilebilir veya dalga
+						söndürülebilir. Duba etrafında suyun kütle ataleti ihmal edilmiş,
+						sürtünme direnci ise yok dencek kadar düşük tutulmuştur.
+					</span>
+					<i>https://github.com/kzlsahin/Buoy_Simulation</i>
+				</a>
+			</p>
+		</article>
+
+		<article onclick="location.href='https://github.com/kzlsahin/ArrowGame'">
+			<h3>
+				<span id="en" class="lang-dependant">A Simple Arrow Game</span>
+				<span id="tr" class="lang-dependant">Basit Bir Ok Atma Oyunu</span>
+			</h3>
+			<img src="./images/ArrowGame_Screen.png" alt="skeç ekran görüntüsü">
+			<p>
+				<a rel="nofollow" href="https://github.com/kzlsahin/ArrowGame" target="_blank">
+
+					<span id="en" class="lang-dependant">
+						This game that I prepared with Java processing 3
+						You have to shoot arrows at targets. The wind may significantly affect the speed of your arrows at varying speeds and directions.
+						The goal is not to let monsters into the white circle in front of you.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Java processing 3 ile hazırladığım bu oyunda ortalıkta dolanan
+						hedeflere ok atmanız gerekmektedir. Değişen hız ve yönlerde rüzgar okunuzu cidde oranda
+						etkileyebilir. Amaç önünüzdeki beyaz daireye canavarları sokmamak.
+					</span>
+					<i>https://github.com/kzlsahin/ArrowGame</i>
+				</a>
+			</p>
+		</article>
+
+		<article onclick="location.href='https://github.com/kzlsahin/mySociety'">
+			<h3>
+				My Society
+			</h3>
+			<img src="./images/mySociety-1.png" alt="skeç ekran görüntüsü">
+			<p>
+				<a rel="nofollow" href="https://github.com/kzlsahin/mySociety" target="_blank">
+
+					<span id="en" class="lang-dependant">
+						05.05.2020 A java Tile Map 2D Game Engine draft written with Processing 3.4 (https://processing.org/).
+
+						Started with the idea to solve the problem of how to render an isometric tilemap. Everything started with a pen and a sketch paper,
+						drawing lines and trying to figure out the right algorithm to sort the tiles in such an order that the map is seen as a 3d image.
+					</span>
+					<span id="tr" class="lang-dependant">
+						05.05.2020 Processing 3.4 ile yazılmış bir java Tile Map 2D Game Engine taslağı (https://processing.org/).
+
+						İzometrik bir döşeme haritasının nasıl oluşturulacağı sorununu çözme fikriyle başladı. Her şey bir kalem ve eskiz kağıdıyla başladı,
+						çizgiler çizmek ve karoları haritanın 3 boyutlu bir görüntü olarak görülmesini sağlayacak şekilde sıralamak için doğru algoritmayı bulmaya çalışmak.
+					</span>
+					<i>https://github.com/kzlsahin/mySociety</i>
+				</a>
+			</p>
+		</article>
+
+	</article>
+
+
+
+	<h2>
+		<span id="en" class="lang-dependant">JavaScript Projects</span>
+		<span id="tr" class="lang-dependant">JavaScript Çalışmalarım</span>
+	</h2>
+
+	<article class="topicArticle">
+		<article onclick="location.href='https://kzlsahin.online/Luxolis'">
+			<h3>
+				<span id="en" class="lang-dependant">Responsive Login Form</span>
+				<span id="tr" class="lang-dependant">Responsive Login Form</span>
+
+			</h3>
+			<img src="./images/Login-Form.png" alt="uygulama ekran görüntüsü">
+			<p>
+				<a href="https://kzlsahin.online/Luxolis" title="login page">
+
+					<span id="en" class="lang-dependant">
+						Responsive login form with validaton.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Responsive login form with validaton.
+					</span>
+				</a>
+				<i>https://kzlsahin.online/Luxolis/</i>
+			</p>
+		</article>
+		<article onclick="location.href='https://kzlsahin.online/EmaHarita-V3/'">
+			<h3>
+				<span id="en" class="lang-dependant">PWA - Service Price Calculator for Map Engineers </span>
+				<span id="tr" class="lang-dependant">PWA - Harita Mühendisleri için Etüt ve Proje Fiyat Uygulaması</span>
+
+			</h3>
+			<img src="./images/EmaHarita.png" alt="uygulama ekran görüntüsü">
+			<p>
+				<a href="https://kzlsahin.online/EmaHarita-V3/" title="EmaHarita">
+
+					<span id="en" class="lang-dependant">
+						My second progressive Web application. It is ordered by "Ema Harita" to have a handy tool to calculate prices of survey and project services according to rules published by Turkish Chamber of Map and Cadastral Engineers
+					</span>
+					<span id="tr" class="lang-dependant">
+						İkinci PWA uygulamam. Harita ve Kadastro Mühendisleri Odası tarafından yayınlanan kurallara göre etüt ve proje hizmetlerinin fiyatlarını hesaplamak için kullanışlı bir araca sahip olmak isteyen "Ema Harita" için geliştirdim.
+					</span>
+				</a>
+
+			</p>
+		</article>
+
+		<article onclick="location.href='https://kzlsahin.online/AreaCalculator/'">
+			<h3>
+				<span id="en" class="lang-dependant">Polygon Area Calculator</span>
+				<span id="tr" class="lang-dependant">Poligon Alan Hesabı</span>
+
+			</h3>
+			<img src="./images/AreaCalculator.jpg" alt="uygulama ekran görüntüsü">
+			<p>
+				<a href="/AreaCalculator/" title="Area Calculator">
+
+					<span id="en" class="lang-dependant">
+						This page may be used to calculate area of a parcel by using google maps.
+						You may copy coordinates of a point on the map by right click and then click on the coordinates
+						shown on top of the menu.
+					</span>
+					<span id="tr" class="lang-dependant">
+						u sayfayı Google maps üzerinden bir parselin veya bir poligon şeklin alanını hesaplamak için kullanabilirsiniz.
+						Harita üzerinde bir noktaya sağ tıkladığınızda açılan menünün en üstünde koordinatlar görünür.
+						Global koordinatlar seçeneği seçildiğine girilen koordinatlar metrik sisteme dönüştürülür.
+					</span>
+				</a>
+			</p>
+		</article>
+
+		<article onclick="location.href='https://kzlsahin.online/incApp-v1.6/'">
+			<h3>
+				<span id="en" class="lang-dependant">Inclining Experiment Recorder</span>
+				<span id="tr" class="lang-dependant">Meyil Tecrübesi Takip Uygulmaası</span>
+
+			</h3>
+			<img src="./images/IncApp.PNG" alt="uygulama ekran görüntüsü">
+			<p>
+				<a href="/incApp-v1.5/" title="Meyil Tecrubesi Ekran Goruntusu">
+
+					<span id="en" class="lang-dependant">
+						An application to record observations and perform preliminary  calculations in-place and print a report of inclining experiment which is
+						a major operation that is necessary before commissioning of a vessel.
+						Inclining experiment is essential in determining the parameters to evaluate and verify the stability condition of a vessel after construction.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Meyil tecrübesi sırasında alınan ölçümleri kaydederken ön hesapların yerinde yapılabilmesi ve rapor alınabilmesi için bir uygulama.
+						Meyil tecrübesi, inşaatından sonra bir geminin stabilite durumunu değerlendirmek ve doğrulayabilmek için parametrelerin gerçek değerinin belirlenmesinde esastır.
+					</span>
+				</a>
+			</p>
+		</article>
+
+		<article onclick="location.href='https://kzlsahin.online/list.A.2.1.new.html'">
+			<h3>
+				<span id="en" class="lang-dependant">Dynamic Checklist</span>
+				<span id="tr" class="lang-dependant">Dinamik Kontrol Listesi</span>
+
+			</h3>
+			<img src="./images/DynamicChecklist.png" alt="uygulama ekran görüntüsü">
+			<p>
+				<a href="/list.A.2.1.new.html" title="Dinamik kontrol listesi">
+
+					<span id="en" class="lang-dependant">
+						I worked on a solution to develop the efficiency of the procedures for the application to Harbour Master Office
+						about ship construction permissions. A system of dynamic checklist is developed as a solution.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Liman Başkanlığına yapılan Gemi İnşa İzni başvuru sürecinin verimini artıracak bir çözüm üzerinde çalıştım.
+						Çözüm olarak bir dinamik kontrol listesi geliştirdim.
+					</span>
+				</a>
+			</p>
+		</article>
+		<article onclick="location.href='https://kzlsahin.online/TriangularDistribution_ver3/'">
+			<h3>
+				<span id="en" class="lang-dependant">Visualizing Triangular Distribution for DDEs</span>
+				<span id="tr" class="lang-dependant">DDE Sistemlerde Üçgen Dağılımı Gösterimi</span>
+			</h3>
+			<img src="./images/TriangularDistribution.png" alt="uygulama ekran görüntüsü">
+			<p>
+				<a href="https://kzlsahin.online/TriangularDistribution_ver3/" title="Triangular Distribution app page">
+					<span id="en" class="lang-dependant">
+						Animator for a SEIR model with triangular probabilistic distribution used for reovery transition.
+
+						I developed this application as a supportive part of my academic research.
+						This app demonstrates that a triangular probabilistic distribution can be used as a multiple delay on delay differantial equations.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Bu uygulamayı akademik araştırmamın destekleyici bir parçası olarak geliştirdim.
+						Bu uygulama, üçgen bir olasılık dağılımının gecikme diferansiyel denklemlerinde çoklu gecikme olarak kullanılabileceğini göstermektedir.
+					</span>
+				</a>
+			</p>
+		</article>
+
+		<article onclick="location.href='https://kzlsahin.online/Fourier/'">
+			<h3>
+				<span id="en" class="lang-dependant">Fourier Viewer</span>
+				<span id="tr" class="lang-dependant">Fourier Serisi Ekranı</span>
+
+			</h3>
+			<img src="./images/FourierSeries.png" alt="uygulama ekran görüntüsü">
+			<p>
+				<a href="/Fourier/" title="Fourier Viewer">
+
+					<span id="en" class="lang-dependant">
+						A page that visualizes a fourier series. I have written the page to visualize
+						Fourier series during my 2022, spring semester, Applied Mathematics lecture.
+					</span>
+
+					<span id="tr" class="lang-dependant">
+						Fourier serisini görselleştiren bir sayfa.
+						2022 bahar dönemimde, Uygulamalı Matematik dersim sırasında Fourier serileri çalışırken görselleştirmek için hazırlamıştım.
+					</span>
+				</a>
+			</p>
+		</article>
+		<article onclick="location.href='https://openprocessing.org/sketch/746094'">
+			<h3>
+				<span id="en" class="lang-dependant">Simulation of Liquid Particles in a 2D Box</span>
+				<span id="tr" class="lang-dependant">Bir Kutu İçinde Sıvı Partiküller</span>
+			</h3>
+			<img src="./images/LiquidParticles.png" alt="uygulama ekran görüntüsü">
+			<p>
+				<a rel="nofollow" href="https://openprocessing.org/sketch/746094" title="Mouse sol tuşuna tıklayarak cisimler ekleyin" target="_blank">
+					<span id="en" class="lang-dependant">
+						This is a simple animation for atoms behaving in liquid forms inside a box
+					</span>
+					<span id="tr" class="lang-dependant">
+						Atomların sıvı formunda bir kutu içerisindeki hareketini gösteren animasyon
+					</span>
+					<i>https://openprocessing.org/sketch/746094</i>
+				</a>
+			</p>
+		</article>
+		<article onclick="location.href='/NeuralNetwork/PricePrediction.html'">
+			<h3>
+				<span id="en" class="lang-dependant">Deep learning</span>
+				<span id="tr" class="lang-dependant">Derin Öğrenme Demo çalışması</span>
+
+			</h3>
+			<img src="./images/Sail_sq.png" alt="Uygulama Ekran Görüntüsü">
+			<p>
+				<a href="/NeuralNetwork/PricePrediction.html" title="Price Prediction">
+
+					<span id="en" class="lang-dependant">
+						An algorithm that learns to guess the prices of estates according to 6 parameters
+					</span>
+					<span id="tr" class="lang-dependant">
+						6 parametre üzerinden emlak fiyatlarını tahmin etmeye çalışan bir algoritma
+					</span>
+				</a>
+			</p>
+		</article>
+
+		<article onclick="location.href='https://kzlsahin.online/LinearRegression'">
+			<h3>
+				<span id="en" class="lang-dependant">Linear Regression</span>
+				<span id="tr" class="lang-dependant">Lineer Regresyon</span>
+			</h3>
+			<img src="./images/LinearRegression.png" alt="uygulama ekran görüntüsü">
+			<p>
+				<a href="/LinearRegression" title="açılan siyah kanvas üzerinde farenin sol tuşuna basarak küreler oluşturun ve hareketlerini izleyin">
+					<span id="en" class="lang-dependant">
+						Lineer Regression is a method to find a line fits to a cloud of points.
+						You will find an example on the page. Lineer regression is also an entry to machine learning.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Liner regresyon bir nokta bulutuna eğri uydurmak için kullanılan bir yöntemdir. Sayfada buna bir örnek bulacaksınız.
+						Lineer regresyon aynı zamanda makine öğrenmesinin girişidir.
+					</span>
+				</a>
+			</p>
+		</article>
+		<article onclick="location.href='https://kzlsahin.online/solarSystem'">
+			<h3>
+				<span id="en" class="lang-dependant">Gravitational Simulation of Celestial Bodies</span>
+				<span id="tr" class="lang-dependant">Gök Cisimleri Simulasyonu</span>
+			</h3>
+			<img src="./images/SolarSystem.png" alt="uygulama ekran görüntüsü">
+			<p>
+				<a href="/solarSystem.html" title="Mouse sol tuşuna tıklayarak cisimler ekleyin">
+					<span id="en" class="lang-dependant">
+						A simulation demonstrating the celestial bodies orbit around a massive circle at the center (the sun maybe).
+						You can create small celestial bodies by clicks on the dark space and even you can navigate through the space.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Merkezde büyük bir kütlenin (ör. Güneş) yer aldığı bir uzayda küçük kütlelerin nasıl yörünge izlediğini gösteren bir simülasyon.
+						Uzaya tıklayarak yeni gök cisimleri oluşturabilir ve hatta uzayda gezebilirsiniz.
+					</span>
+				</a>
+			</p>
+		</article>
+
+		<article onclick="location.href='/particles'">
+			<h3>
+				<span id="en" class="lang-dependant">Particles</span>
+				<span id="tr" class="lang-dependant">Partikül Simülasyonu</span>
+			</h3>
+			<img src="./images/Particles.png" alt="Uygulama Ekran Görüntüsü">
+			<p>
+				<a href="/particles" title="açılan siyah kanvas üzerinde farenin sol tuşuna basarak küreler oluşturun ve hareketlerini izleyin">
+					<span id="en" class="lang-dependant">
+						Using p5.js library, I made a visual simulation of gravitational forces.
+						Click on the page and the particules shall fly around.
+					</span>
+					<span id="tr" class="lang-dependant">
+						P5.js kütüphanesini kullanarak kütleçekimsel bir görsel simülasyon oluşturdum.
+						Açılan sayfada boşluğa tıklayın ve partiküller etrafta uçuşsun.
+					</span>
+				</a>
+			</p>
+		</article>
+
+
+		<article onclick="location.href='https://github.com/kzlsahin/SerialNoAnalyser'">
+			<h3>
+				<span id="en" class="lang-dependant">Serial Number Analysis on a Database</span>
+				<span id="tr" class="lang-dependant">Bir Veritabanına Kayıtlı Seri Numaraların Analizi</span>
+			</h3>
+			<img src="./images/Sail_sq.png" alt="Uygulama Ekran Görüntüsü">
+			<p>
+				<a rel="nofollow" href="https://github.com/kzlsahin/SerialNoAnalyser" title="https://github.com/kzlsahin/SerialNoAnalyser" target="_blank">
+					<span id="en" class="lang-dependant">
+						This application was used to analyse the diversity of registered serial numbers coming from a database
+						in order to infer the need for applying a control system for the engine registration system.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Bu uygulama, motor kayıt sistemi için bir kontrol sistemi uygulama ihtiyacını ortaya çıkarmak amacıyla
+						bir veri tabanından gelen kayıtlı seri numaralarının çeşitliliğini analiz etmek için kullanıldı.
+					</span>
+					<i>https://github.com/kzlsahin/SerialNoAnalyser</i>
+				</a>
+			</p>
+		</article>
+		<article onclick="location.href='https://github.com/kzlsahin/downloadTableContent'">
+			<h3>
+				<span id="en" class="lang-dependant">Table Content Downloader</span>
+				<span id="tr" class="lang-dependant">Bir Sitedeki Tablo İçeriğini İndirme</span>
+			</h3>
+			<img src="./images/Sail_sq.png" alt="Uygulama Ekran Görüntüsü">
+			<p>
+				<a rel="nofollow" href="https://github.com/kzlsahin/downloadTableContent" title="https://github.com/kzlsahin/downloadTableContent" target="_blank">
+					<span id="en" class="lang-dependant">
+						This JS script is to be used on a browser console to download contents of a table on a page as a CSV file.
+						As it may be needed to define some functions to get the table content on a page as there may be no way to do this by the user interface of the page.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Bu JS betiği, bir sayfadaki bir tablonun içeriğini CSV dosyası olarak indirmek için bir tarayıcı konsolunda kullanılacaktır.
+						Bir sayfadaki tablo içeriğini almak için bazı işlevlerin tanımlanması gerekebileceğinden, bunu sayfanın kullanıcı arayüzü ile yapmanın bir yolu olmayabilir.
+					</span>
+					<i>https://github.com/kzlsahin/downloadTableContent</i>
+				</a>
+			</p>
+		</article>
+
+		<article onclick="location.href='https://github.com/kzlsahin/SimpleSlider.js'">
+			<h3>
+				<span id="en" class="lang-dependant">SimpleSlider.js</span>
+				<span id="tr" class="lang-dependant">SimpleSlider.js</span>
+			</h3>
+			<img src="./images/Sail_sq.png" alt="Uygulama Ekran Görüntüsü">
+			<p>
+				<a rel="nofollow" href="https://github.com/kzlsahin/SimpleSlider.js" title="Github Link" target="_blank">
+					<span id="en" class="lang-dependant">
+						A simple Javascript implementation to create a slide inside an HTML page
+					</span>
+					<span id="tr" class="lang-dependant">
+						HTML sayfası içinde kayar sunum uygulaması
+					</span>
+					<i>https://github.com/kzlsahin/SimpleSlider.js</i>
+				</a>
+			</p>
+		</article>
+
+
+
+
+	</article>
+
+
+
+
+	<h2>
+		<span id="en" class="lang-dependant">Python Scripts</span>
+		<span id="tr" class="lang-dependant">Python Çalışmalarım</span>
+	</h2>
+
+	<article class="topicArticle">
+
+
+		<article>
+			<h3>
+				<span id="en" class="lang-dependant">An Algorithm to Solve Sudoku Puzzles</span>
+				<span id="tr" class="lang-dependant">Sudoku Çözemek için Algoritma</span>
+			</h3>
+
+			<p>
+				<a href="./PythonSudokuSolver">
+					<span id="en" class="lang-dependant">
+						During my compulsory military service I had nothing to spend time except several books and a Sudoku application on my keypad phone.
+						After a while, when I realized that my mind was using certain algorithms while solving sudoku, I decided to put it into software.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Zorunlu askerliğim sırasında birkaç kitap ve tuşlu telefonumda Sudoku uygulaması dışında vakit geçirecek hiçbir şeyim yoktu.
+						Bir süre sonra sudoku çözerken zihnimin belirli algoritmalar kullandığını fark ettiğimde onu yazılıma koymaya karar verdim.
+					</span>
+				</a>
+			</p>
+
+		</article>
+
+		<article>
+			<h3>
+				<span id="en" class="lang-dependant">Simple Matrix Calculations</span>
+				<span id="tr" class="lang-dependant">Basit Matrix İşlemleri Çözmek</span>
+			</h3>
+
+			<p>
+				<a href="./PythonMatrixCalc">
+					<span id="en" class="lang-dependant">
+						It was impossible not to delve into matrix calculations while researching 2d and 3d transformations while I was studying visual applications with Java.
+						While researching the subject, I prepared a small library as a result of wanting to put it into practice.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Java ile görsel uygulamalar çalışırken 2d ve 3d dönüşümleri araştırırken matris hesaplamalarına girmemek mümkün değildi.
+						Konuyu araştırırken uygulamaya geçirmek istediğim için küçük bir kütüphane hazırladım.
+					</span>
+				</a>
+			</p>
+		</article>
+
+		<article>
+			<h3>
+				<span id="en" class="lang-dependant">Area Calculation Based on Corner Coordinates</span>
+				<span id="tr" class="lang-dependant">Köşe Koordinatları Üzerinden Alan Hesabı</span>
+			</h3>
+
+			<p>
+				<a rel="nofollow" href="https://github.com/kzlsahin/PolygonAreaCalc">
+					<span id="en" class="lang-dependant">
+						A python console script that calculates the area of a polygon which coordinates of its corners are given.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Düzensiz bir çokgenin alanını hesaplama ihtiyacı daha önce duyduysanız,
+					</span>
+					<i>https://github.com/kzlsahin/PolygonAreaCalc</i>
+				</a>
+			</p>
+		</article>
+	</article>
+
+
+	<h2>
+		<span id="en" class="lang-dependant">Other Works</span>
+		<span id="tr" class="lang-dependant">Diğer Çalışmalarım</span>
+	</h2>
+	<article class="topicArticle">
+
+		<article>
+			<h3>Einstain Nazariyesi - Mehmet Refik Fenmen</h3>
+
+			<p>
+				<a href="/PDFs/EinsteinNazariyesiGirişBölümü 02.02.2018.pdf" target="_blank">
+
+
+					<span id="en" class="lang-dependant">
+						I was working on transliteration from the alphabet to the new alphabet of the first edition
+						of the book named "Einstein Theory" written by Mehmet Refik Fenmen. You may find the introduction chapter of first edition of Mehmet Refik Fenmen's this precious legacy.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Mehmet Refik Fenmen
+						tarafından kaleme alınan "Einstain Nazariyesi" isimli kitabın birinci baskısının eski
+						alfabeden yeni alfabeye çevirisi üzerinde çalışıyordum. Mehmet Refik Fenmenin bu değerli mirasının birinci baskısının
+						giriş bölümü metnini burada bulabilirsiniz.
+					</span>
+				</a>
+			</p>
+		</article>
+
+		<article>
+
+			<h3>
+				<span id="en" class="lang-dependant">Unsteady State Model of an Heat Exchanger using Matlab - Simulink</span>
+				<span id="tr" class="lang-dependant">Isı Eşanjörü Kararsız Durum Modeli</span>
+			</h3>
+			<img src="./images/HeatexchangerModel.png" alt="model ekran görüntüsü">
+			<p>
+				<a rel="nofollow" href="https://github.com/kzlsahin/HeatExchanger" target="_blank">
+
+					<span id="en" class="lang-dependant">
+						this study is about building an unsteady state dynamic model of an heat exchanger
+						that is suitable to be improved for using on different studies and to be modified according to needs in the future.
+					</span>
+					<span id="tr" class="lang-dependant">
+						Bu çalışma, farklı çalışmalarda kullanılmak üzere geliştirilmeye ve gelecekte ihtiyaçlara göre modifiye edilmeye uygun
+						bir ısı eşanjörünün kararsız durum dinamik modelinin oluşturulması ile ilgilidir.
+					</span>
+
+					<i>https://github.com/kzlsahin/HeatExchanger</i>
+
+				</a>
+			</p>
+		</article>
+
+	</article>
+</div>
+
+@code {
+	protected override async Task OnAfterRenderAsync(bool firstRender)
+	{
+		if (!firstRender) return;
+		await Task.Delay(200);
+		await JS.InvokeVoidAsync("checkLang"); // Calls the JS function
+	}
+}
