@@ -3,9 +3,6 @@
     float: left;
     width: 100%;
 }
-
-
-
     .sharedItems h2 {
         text-align: center;
     }
@@ -25,12 +22,11 @@
         width: 20em;
         border-left: 6px solid brown;
         border-radius: 15px;
-        color: darkred;
         margin: 2%;
         padding-left: 1%;
         padding-right: 1%;
         font-size: 15px;
-        padding-bottom: 0.5em;
+        padding-bottom: 0.8em;
         cursor: pointer;
     }
 
@@ -48,7 +44,7 @@
             box-shadow: 2px 5px 12px grey;
             border-radius: 0.5em;
             width: 80%;
-            margin: auto;
+            margin: 0 auto 0.4em;
         }
 
 @media only screen and (max-width: 760px) {

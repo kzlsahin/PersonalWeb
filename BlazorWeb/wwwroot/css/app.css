@@ -1,5 +1,11 @@
+:root {
+    --color-primary: #330000;
+    --color-quote: #966666;
+}
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'sans-serif ', sans-serif, Arial;
+    font-size: 14pt;
+    color: var(--color-primary);
 }
 
 h1:focus {
@@ -10,6 +16,11 @@ a, .btn-link {
     color: #0071c1;
 }
 
+.img-coming-soon{
+    width:60%;
+    margin:auto;
+}
+
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
@@ -17,7 +28,7 @@ a, .btn-link {
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 .content {
@@ -100,4 +111,17 @@ a, .btn-link {
 
 code {
     color: #c02d76;
+}
+
+@media only screen and (max-width: 760px) {
+    body {
+        width: 98%;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-size: 2.7vw;
+        color: var(--color-primary);
+    }
+    .img-coming-soon {
+        width: 80%;
+    }
 }

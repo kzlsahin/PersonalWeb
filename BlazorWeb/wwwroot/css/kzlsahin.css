@@ -6,16 +6,18 @@
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 2em;
-    border-bottom: 2px solid darkred;
+    border-bottom: 2px solid;
 }
 
 .lang-dependant {
     display: none;
 }
 
-.writing-column{
-    max-width:50em;
+.writing-column {
+    margin : auto;
+    max-width: 50em;
 }
+
 #kzlSahin {
     width: 40%;
     max-width: 30em;
@@ -42,7 +44,8 @@
 }
 
 .personal-details {
-    font-size: 22px;
+    line-height: 1.7;
+    font-size: 1.1em;
     font-family: 'Moon Dance', cursive;
     text-align: center;
     line-height: 2em;
@@ -55,7 +58,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    color: darkred;
+    color: var(--color-primary);
     align-items: center;
 }
 
@@ -83,12 +86,27 @@ section, hr {
     font-weight: bold;
     text-align: center;
     cursor: pointer;
-    color: darkred;
 }
 
     .resume-download:hover {
         box-shadow: 5px 5px 8px grey;
     }
+
+.quote {
+    font-style: italic; /* Keep it elegant */
+    font-weight: 500; /* Medium bold */
+    margin: 1em auto 2em;
+    padding: 30px 20px; /* More padding around the statement */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Soft shadow */
+    border-radius: 4px; /* Slightly rounded corners */
+    color: var(--color-quote);
+}
+
+/* --- Styling for the second paragraph (Mission Statement) --- */
+/* Selects all .quote-content elements within .quotation-section, but the first-of-type rule above overrides for the first one */
+.quote-content {
+    line-height: 1.7; /* Good line height for readability */
+}
 
 @media only screen and (max-width: 760px) {
     body {
@@ -96,14 +114,12 @@ section, hr {
         padding-left: 1%;
         padding-right: 1%;
         font-size: 2.7vw;
-        color: darkred;
     }
 
     .headTitle {
         float: right;
         width: 100%;
         text-align: center;
-        color: darkred;
     }
 
     #kzlSahin {
@@ -130,5 +146,16 @@ section, hr {
 
     .resume-download {
         font-size: 1.5vw;
+    }
+
+    .quote {
+        padding: 50px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .quote-content {
+        font-size: 1em;
+        font-size: 1.4em; /* Adjust font size for mobile */
+        padding: 20px 15px;
+        margin-bottom: 30px; /* Adjust bottom margin for mobile */
     }
 }
