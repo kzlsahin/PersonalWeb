@@ -37,7 +37,7 @@
     }
 
 .personal-name {
-    font-size: 26px;
+    font-size: 16pt;
     font-family: 'Moon Dance', cursive;
     text-align: center;
     line-height: 2em;
@@ -45,7 +45,7 @@
 
 .personal-details {
     line-height: 1.7;
-    font-size: 1.1em;
+    font-size: 14pt;
     font-family: 'Moon Dance', cursive;
     text-align: center;
     line-height: 2em;
@@ -58,7 +58,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    color: var(--color-primary);
+    color: var(--color-highlighted);
     align-items: center;
 }
 
@@ -89,6 +89,7 @@ section, hr {
     position: fixed;
     bottom: 10px;
     background-color: var(--color-background);
+    color: var(--color-highlighted);
 }
 
     .resume-download:hover {
@@ -137,12 +138,10 @@ section, hr {
     }
 
     .personal-name {
-        font-size: 3.5vw;
         font-family: 'Moon Dance', cursive;
     }
 
     .personal-details {
-        font-size: 3vw;
         font-family: 'Moon Dance', cursive;
     }
 
@@ -151,8 +150,6 @@ section, hr {
     }
 
     .quote-content {
-        font-size: 1em;
-        font-size: 1.4em; /* Adjust font size for mobile */
         padding: 20px 15px;
         margin-bottom: 30px; /* Adjust bottom margin for mobile */
     }
