@@ -1,6 +1,7 @@
 :root {
     --color-primary: #330000;
     --color-quote: #966666;
+    --color-background: white;
 }
 html, body {
     font-family: 'sans-serif ', sans-serif, Arial;

@@ -15,6 +15,7 @@
 .writing-column {
     margin : auto;
     max-width: 50em;
+    margin-bottom: 4em;
 }
 
 #kzlSahin {
@@ -77,14 +78,17 @@ section, hr {
 
 .resume-download {
     padding: 0.2em;
-    width: 10em;
+    width: 14em;
     border: 1px solid brown;
     box-shadow: 2px 2px 4px grey;
     font-family: 'Moon Dance', cursive;
-    font-size: 18px;
+    font-size: 12pt;
     font-weight: bold;
     text-align: center;
     cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    background-color: var(--color-background);
 }
 
     .resume-download:hover {
@@ -112,7 +116,6 @@ section, hr {
         width: 98%;
         padding-left: 1%;
         padding-right: 1%;
-        font-size: 2.7vw;
     }
 
     .headTitle {
@@ -141,10 +144,6 @@ section, hr {
     .personal-details {
         font-size: 3vw;
         font-family: 'Moon Dance', cursive;
-    }
-
-    .resume-download {
-        font-size: 1.5vw;
     }
 
     .quote {
