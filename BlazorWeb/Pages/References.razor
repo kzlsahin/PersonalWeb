@@ -1,0 +1,320 @@
+﻿@page "/references"
+@inject HttpClient Http
+@inject IJSRuntime JS
+<PageTitle>Personal Projects</PageTitle>
+
+<div class="head-scene">
+    <div id="kzlSahin">
+        <img alt="kızıl şahin fotoğrafı" src="./assets/kizilsahin.jpeg" style="max-width:100%" />
+    </div>
+
+    <div class="head-title">
+
+        <details class="hand-written" style="text-align: center; font-style:italic; cursor:pointer;" closed>
+            <summary style="list-style:none">
+                <br />Your dreams are your wind,<br />
+                Blowing your sails through the life,<br />
+                Open your wings and fly,<br />
+                Up into the sky...<br /><br />
+            </summary>
+            <p>
+                To See how wide the horizon is,<br />
+                Look around you and open your mind,<br />
+                In your dreams, you see, the power is,<br />
+                Not in your muscles or in your veins...
+            </p>
+        </details>
+        &#8212M.Senturk
+    </div>
+
+</div>
+
+
+<div class="sharedItems">
+    <h2>
+        <span id="en" class="lang-dependant">Professional References</span>
+        <span id="tr" class="lang-dependant">Profesyonel Referanslar</span>
+    </h2>
+    <article class="topicArticle">
+        <article>
+            <h3>2024 - Iksir Application</h3>
+            <img src="./images/IksirApp.png" alt="Uygulama Ekran Görüntüsü" onclick="window.open(this.src, '_blank')">
+            <p>
+                <a rel="nofollow" href="https://www.aiksir.com/" target="_blank" >
+                    <span id="en" class="lang-dependant">
+                        Designed and developed the backend infrastructure and services of
+                        this start-up product, utilized Docker containers on AWS and Make commands to automate
+                        deployments and integrated Elasticsearch and PostgreSQL DBs and developed search
+                        and auto-complete endpoints. I also developed Postman environments for manual testing and created
+                        unit tests using the MSTest framework.
+
+                    </span>
+                    <span id="tr" class="lang-dependant">
+                        Bu start-up ürününün
+                        arka uç altyapısını ve hizmetlerini tasarladı ve geliştirdi,
+                        dağıtımlarını otomatikleştirmek için Docker konteynerlerini ve Make komutlarını kullandı ve Elasticsearch ve PostgreSQL DB'lerini entegre etti ve arama
+                        ve otomatik tamamlama uç noktalarını geliştirdi.
+                    </span>
+                    <i>https://www.aiksir.com/</i>
+                </a>
+            </p>
+        </article>
+
+        <article onclick="location.href='https://www.adeko.com/en/'">
+            <h3>2024 - CabinCAD</h3>
+            <img src="./images/CabinCAD.png" alt="CabinCAD Screen">
+            <p>
+                <a rel="nofollow" href="https://www.adeko.com/en/" target="_blank">
+                    <span id="en" class="lang-dependant">
+                        Developed geometric algorithms and parallel programming solutions.
+                        Carried excessive refactorings and gave presentations on software design principles, clean code
+                        practices and programming paradigms to improve the quality of the code base and software development process of the team. I also Engineered Protobuf file serialization and parallel programming
+                        solutions for CabinCad and improved exception handling and debugging capabilities of
+                        CabinCAD, while developing new features.
+                    </span>
+                    <span id="tr" class="lang-dependant">
+                        Geometrik algoritmalar ve paralel programlama çözümleri geliştirdim.
+                        Ekibin kod tabanının ve yazılım geliştirme sürecinin kalitesini artırmak için ciddi refactoringler gerçekleştirdim ve yazılım tasarım ilkeleri, temiz kod
+                        uygulamaları ve programlama paradigmaları hakkında sunumlar yaptım. Ayrıca CabinCad için Protobuf dosya serileştirme ve paralel programlama
+                        çözümlerini tasarladım ve yeni özellikler geliştirirken CabinCAD'in hata ayıklama yeteneklerini geliştirdim.
+                    </span>
+                    <i>https://www.adeko.com/en/</i>
+                </a>
+            </p>
+        </article>
+
+        <article>
+            <h3>2023 - TLRudder</h3>
+            <img src="./images/RudderApp.png" alt="Uygulama Ekran Görüntüsü" onclick="window.open(this.src, '_blank')">
+            <p>
+                <a rel="nofollow" href="https://github.com/Mesh-Engineering-Software-Co" target="_blank">
+                    <span id="en" class="lang-dependant">
+                        I architected a new CAD/CAM analysis software in WPF,
+                        implementing the command and memento design patterns, then
+                        developed a functioning prototype of the software. I also created a framework to digitalize class rules.
+                    </span>
+                    <span id="tr" class="lang-dependant">
+                        WPF'de yeni bir CAD/CAM analiz yazılımı tasarladım,
+                        command ve memento tasarım modellerini uyguladım, ardından
+                        yazılımın işleyen bir prototipini geliştirdim. Ayrıca sınıf kurallarını dijitalleştirmek için bir çerçeve oluşturdum.
+                    </span>
+                    <i>https://github.com/Mesh-Engineering-Software-Co</i>
+                </a>
+            </p>
+        </article>
+
+        <article onclick="location.href='https://bit.ly/re-architecting'">
+            <h3>2023 - TLHullScantling</h3>
+            <img src="./images/HullScantlingApp.png" alt="Hull Scantling App brochure">
+            <p>
+                <a rel="nofollow" href="https://bit.ly/re-architecting" target="_blank">
+                    <span id="en" class="lang-dependant">
+                        Re-architected this software application into an add-in architecture. 
+                        I also developed a framework for translating rules to digital and applying rule-based analysis workflow. 
+                    </span>
+                    <span id="tr" class="lang-dependant">
+                        Bu yazılım uygulamasını bir eklenti mimarisine dönüştürdü. 
+                        Ayrıca kuralları dijitale çevirmek ve kural tabanlı analiz iş akışını uygulamak için bir çerçeve geliştirdim.
+                    </span>
+                    <i>https://bit.ly/re-architecting</i>
+                </a>
+            </p>
+        </article>
+
+        <article>
+            <h3>2022 - Ship Structure - Rhino Plugin</h3>
+            <img src="./images/MesherRhino.jpeg" alt="Uygulama Ekran Görüntüsü" onclick="window.open(this.src, '_blank')">
+            <p>
+                <a rel="nofollow" href="http://www.mesh.com.tr/index-en.html" target="_blank">
+                    <span id="en" class="lang-dependant">
+                        I developed a Rhinoceros plug-in using .Net C# containing modelling tools for ship structure and specific geometries with exporting capabilities 
+                        to transfer the data to a finite element analysis software. Also, I innovated a solution for meshing non-manifold geometries in
+                        RhinoCeros and developed algorithms in C#.
+                    </span>
+                    <span id="tr" class="lang-dependant">
+                        Net C# kullanarak gemi yapısı ve belirli geometriler için modelleme araçları içeren ve verileri bir sonlu elemanlar analiz yazılımına aktarmak için 
+                        dışa aktarma yetenekleri olan bir Rhinoceros eklentisi geliştirdim. Ayrıca,
+                        RhinoCeros'ta manifold olmayan geometrilerin meshlenmesi için bir çözüm geliştirdim ve C#'ta algoritmalar geliştirdim.
+                    </span>
+                    <i>http://www.mesh.com.tr/index-en.html</i>
+                </a>
+            </p>
+        </article>
+    </article>
+    <h2>
+        <span id="en" class="lang-dependant">Published Packages</span>
+        <span id="tr" class="lang-dependant">Yayımlanmış Paketler</span>
+    </h2>
+    <article class="topicArticle">
+        <article onclick="location.href='https://www.nuget.org/packages/SIUnitsArithmetic'">
+            <h3>
+                <span id="en" class="lang-dependant">SIUnitsArtihmetic - NuGet package</span>
+                <span id="tr" class="lang-dependant">SIUnitsArtihmetic - NuGet paketi</span>
+            </h3>
+            <img src="./images/nuget.png" alt="Uygulama Ekran Görüntüsü">
+            <p>
+                <a rel="nofollow" href="https://www.nuget.org/packages/SIUnitsArithmetic" target="_blank">
+                    <span id="en" class="lang-dependant">
+                        SIUnitsArithmetic defines metric system units and provides related
+                        arithmetic operations including unit to unit multiplication even with compound units of any combination
+                        of basic units, resulting in higher or lower order units (m², 1/m or m/s).
+                    </span>
+                    <span id="tr" class="lang-dependant">
+                        SIUnitsArithmetic metrik sistem birimlerini tanımlar. Temel birimlerin
+                        herhangi bir kombinasyonundan oluşan bileşik birimlerle bile, birimden birime çarpma dahil olmak üzere,
+                        ilgili aritmetik işlemlerin yapılabilmesini sağlar.
+                    </span>
+                    <i>https://www.nuget.org/packages/SIUnitsArithmetic</i>
+                </a>
+            </p>
+        </article>
+        <article onclick="location.href='https://www.nuget.org/packages/FloatingPointControl/'">
+            <h3>
+                <span id="en" class="lang-dependant">FloatingPointControl - NuGet package</span>
+                <span id="tr" class="lang-dependant">FloatingPointControl - NuGet paketi</span>
+            </h3>
+            <img src="./images/nuget.png" alt="Uygulama Ekran Görüntüsü">
+            <p>
+                <a rel="nofollow" href="https://www.nuget.org/packages/FloatingPointControl/" target="_blank">
+                    <span id="en" class="lang-dependant">
+                        There is no built-in control for floating-point inputs in Windows Presentation Foundation (WPF). 
+                        Using TextBox for managing floating-point inputs can be a challenge for a developer. 
+                        This package is for floating-point input control with seamless WPF compatibility.
+                    </span>
+                    <span id="tr" class="lang-dependant">
+                        Windows Presentation Foundation'da (WPF) kayan noktalı girdiler için yerleşik bir kontrol yoktur.
+                        Floating-Point veri tipinde girdilerini TextBox kullanarak yönetmek bir geliştirici için zor olabilir.
+                        Bu paket, bu ihtiyaca yönelik sorunsuz WPF uyumluluğuna sahip bir kontrol sunuyor.
+                    </span>
+                    <i>https://www.nuget.org/packages/FloatingPointControl/</i>
+                </a>
+            </p>
+        </article>
+
+    </article>
+    <h2>
+        <span id="en" class="lang-dependant">Semi-Professional References</span>
+        <span id="tr" class="lang-dependant">Semi-Professional References</span>
+    </h2>
+    <article class="topicArticle">
+        <article onclick="location.href='https://github.com/kzlsahin/MstfRhinoPlugin'">
+            <h3>
+                <span id="en" class="lang-dependant">2022 - Rhinoceros Plugin</span>
+                <span id="tr" class="lang-dependant">2022 - Rhinoceros Eklentisi</span>
+            </h3>
+            <img src="./images/Sail_sq.png" alt="Uygulama Ekran Görüntüsü">
+            <p>
+                <a rel="nofollow" href="https://github.com/kzlsahin/MstfRhinoPlugin" target="_blank">
+                    <span id="en" class="lang-dependant">
+                        I developed a Rhinoceros (3d modelling software) plugin using C# language for my office in order to improve their efficiency.
+                    </span>
+                    <span id="tr" class="lang-dependant">
+                        Dizayn ofis işlerimizin verimliliğini artırmak üzere geliştirdiğim Rhinoceros Eklentisi
+                    </span>
+                    <i>https://github.com/kzlsahin/MstfRhinoPlugin</i>
+                </a>
+            </p>
+        </article>
+
+        <article onclick="location.href='https://kzlsahin.online/EmaHarita-V3/'">
+            <h3>
+                <span id="en" class="lang-dependant">2022 - PWA - Service Price Calculator for Map Engineers </span>
+                <span id="tr" class="lang-dependant">2022 - PWA - Harita Mühendisleri için Etüt ve Proje Fiyat Uygulaması</span>
+
+            </h3>
+            <img src="./images/EmaHarita.png" alt="uygulama ekran görüntüsü">
+            <p>
+                <a href="https://kzlsahin.online/EmaHarita-V3/" title="EmaHarita">
+
+                    <span id="en" class="lang-dependant">
+                        My second progressive Web application. It is ordered by "Ema Harita" to have a handy tool to calculate prices of survey and project services according to rules published by Turkish Chamber of Map and Cadastral Engineers
+                    </span>
+                    <span id="tr" class="lang-dependant">
+                        İkinci PWA uygulamam. Harita ve Kadastro Mühendisleri Odası tarafından yayınlanan kurallara göre etüt ve proje hizmetlerinin fiyatlarını hesaplamak için kullanışlı bir araca sahip olmak isteyen "Ema Harita" için geliştirdim.
+                    </span>
+                </a>
+
+            </p>
+        </article>
+
+        <article onclick="location.href='https://kzlsahin.online/incApp-v1.6/'">
+            <h3>
+                <span id="en" class="lang-dependant">2022 - Inclining Experiment Recorder</span>
+                <span id="tr" class="lang-dependant">2022 - Meyil Tecrübesi Takip Uygulmaası</span>
+
+            </h3>
+            <img src="./images/IncApp.PNG" alt="uygulama ekran görüntüsü">
+            <p>
+                <a href="/incApp-v1.5/" title="Meyil Tecrubesi Ekran Goruntusu">
+
+                    <span id="en" class="lang-dependant">
+                        An application to record observations and perform preliminary  calculations in-place and print a report of inclining experiment which is
+                        a major operation that is necessary before commissioning of a vessel.
+                        Inclining experiment is essential in determining the parameters to evaluate and verify the stability condition of a vessel after construction.
+                    </span>
+                    <span id="tr" class="lang-dependant">
+                        Meyil tecrübesi sırasında alınan ölçümleri kaydederken ön hesapların yerinde yapılabilmesi ve rapor alınabilmesi için bir uygulama.
+                        Meyil tecrübesi, inşaatından sonra bir geminin stabilite durumunu değerlendirmek ve doğrulayabilmek için parametrelerin gerçek değerinin belirlenmesinde esastır.
+                    </span>
+                </a>
+            </p>
+        </article>
+
+        <article onclick="location.href='https://kzlsahin.online/list.A.2.1.new.html'">
+            <h3>
+                <span id="en" class="lang-dependant">2020 - Dynamic Checklist</span>
+                <span id="tr" class="lang-dependant">2020 - Dinamik Kontrol Listesi</span>
+
+            </h3>
+            <img src="./images/DynamicChecklist.png" alt="uygulama ekran görüntüsü">
+            <p>
+                <a href="/list.A.2.1.new.html" title="Dinamik kontrol listesi">
+
+                    <span id="en" class="lang-dependant">
+                        I worked on a solution to develop the efficiency of the procedures for the application to Harbour Master Office
+                        about ship construction permissions. A system of dynamic checklist is developed as a solution.
+                    </span>
+                    <span id="tr" class="lang-dependant">
+                        Liman Başkanlığına yapılan Gemi İnşa İzni başvuru sürecinin verimini artıracak bir çözüm üzerinde çalıştım.
+                        Çözüm olarak bir dinamik kontrol listesi geliştirdim.
+                    </span>
+                </a>
+            </p>
+        </article>
+
+        <article>
+
+            <h3>
+                <span id="en" class="lang-dependant">2020 - Unsteady State Model of an Heat Exchanger using Matlab - Simulink</span>
+                <span id="tr" class="lang-dependant">2020 - Isı Eşanjörü Kararsız Durum Modeli</span>
+            </h3>
+            <img src="./images/HeatexchangerModel.png" alt="model ekran görüntüsü">
+            <p>
+                <a rel="nofollow" href="https://github.com/kzlsahin/HeatExchanger" target="_blank">
+
+                    <span id="en" class="lang-dependant">
+                        this study is about building an unsteady state dynamic model of an heat exchanger
+                        that is suitable to be improved for using on different studies and to be modified according to needs in the future.
+                    </span>
+                    <span id="tr" class="lang-dependant">
+                        Bu çalışma, farklı çalışmalarda kullanılmak üzere geliştirilmeye ve gelecekte ihtiyaçlara göre modifiye edilmeye uygun
+                        bir ısı eşanjörünün kararsız durum dinamik modelinin oluşturulması ile ilgilidir.
+                    </span>
+
+                    <i>https://github.com/kzlsahin/HeatExchanger</i>
+
+                </a>
+            </p>
+        </article>
+
+    </article>
+</div>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender) return;
+        await Task.Delay(200);
+        await JS.InvokeVoidAsync("checkLang"); // Calls the JS function
+    }
+}
