@@ -8,8 +8,8 @@ services:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./web/wwwroot:/usr/share/nginx/html:ro
     depends_on:
-      - apiserver
     restart: always
+      - apiserver
     
   apiserver:
     build:

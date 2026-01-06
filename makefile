@@ -22,3 +22,5 @@ update-nginx: down-nginx
 update-apiserver:
 	docker compose -f docker-compose.yml up --build -d apiserver
 update-frontend: clear-wwwroot publish-blazorweb copy-static-apps update-nginx
+run-apiserver-console:
+	docker exec -it web-apiserver /bin/bash
