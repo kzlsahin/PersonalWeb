@@ -10,6 +10,8 @@ bin/
 obj/
 publish/
 root/
+keys/
+diagnostics/
 
 [Dd]ebug/
 [Rr]elease/
